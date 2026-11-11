@@ -1,0 +1,584 @@
+Return-Path: <8566c1c0-fe92-11ef-98c6-76d897578237@bounce.r.grouponmail.es>
+Delivered-To: raulblancas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id UG1ZOUZf0GentS8A87FxYg
+	(envelope-from <8566c1c0-fe92-11ef-98c6-76d897578237@bounce.r.grouponmail.es>)
+	for <raulblancas@secureitmx.com>; Tue, 11 Mar 2025 12:05:26 -0400
+Return-path: <8566c1c0-fe92-11ef-98c6-76d897578237@bounce.r.grouponmail.es>
+Envelope-to: raulblancas@secureitmx.com
+Delivery-date: Tue, 11 Mar 2025 12:05:26 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:3992 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <8566c1c0-fe92-11ef-98c6-76d897578237@bounce.r.grouponmail.es>)
+	id 1ts26a-0000000DKXH-3MnA
+	for raulblancas@secureitmx.com;
+	Tue, 11 Mar 2025 12:05:26 -0400
+Authentication-Results: CNUSMTA1-1.us.scanscope.net; spf=pass
+ smtp.mailfrom=8566c1c0-fe92-11ef-98c6-76d897578237@bounce.r.grouponmail.es;
+ dkim=pass header.i=@r.grouponmail.es; dmarc=pass action=reject
+ header.from=grouponmail.es;
+Received: from mta23d8.r.grouponmail.com ([50.115.218.23])
+	by mail1.us.scanscope.net v10.0.0.0;	 Tue, 11 Mar 2025 16:04:35 +00:00
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=r.grouponmail.es;
+	s=s2048d20190430; t=1741709073;
+	bh=g4cSXcCVhHqDVIPQNTsTU8ZOCVx3Z0KugcihZ/HVoJI=;
+	h=Date:From:To:Message-ID:Subject:Content-Type;
+	b=ZnxVdys1HTm+ddNiUX3nzjlDaGkdeTxhRb49c+Q3skidpBblWxdcHiVThNQfixELg
+	 +SgXC6AxFHhSsFoj3XTmdRo45mW+L1Eezv1n5NZ2TuMmBIKx1iv2gdYFfJDIr/GNga
+	 ZK2WES8vJFg6ZNvBO5a5hpY3sN4LMXk42Ja8U6tM1GWWknLMNP7h5wyPnFzor6p7CJ
+	 Q3tMqfANKFb+fB1Dn/q1bzuSsbObAo60F90M4GUVBOuFD+Hm2MM94Wq/gH9Uw5gLvZ
+	 GKaZVJoC40XIQwwANEyWbbZmIzJqUv+iljdq34j8QUpTGXbUhflswH1XPt5tcS5IV/
+	 zB1E88S0Kitew==
+Date: Tue, 11 Mar 2025 16:04:33 +0000
+From: =?UTF-8?Q?Groupon_=F0=9F=9F=A2?= <notify@r.grouponmail.es>
+To: <raulblancas@secureitmx.com>
+Message-ID: <1992356430.50335.1741709073213.JavaMail.root@rocketman-commercial--transactional--default-b48dd7c5f-598l4>
+Subject: [Marketing Medium] Activa tu cuenta Groupon
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-RM-SendId: activation_notification_20250311
+X-RM-Clr: 8566c1c0-fe92-11ef-98c6-76d897578237
+X-RM-Engaged: false
+X-RM-EmailName: activation_notification
+X-Brand: groupon
+X-MSFBL: ODU2NmMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4MjM3OnRyYW5zYWN0aW9uYWw6YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNTAzMTE6cm06RVM=
+List-Unsubscribe: <mailto:8566c1c0-fe92-11ef-98c6-76d897578237@unsub.r.grouponmail.es?subject=ODU2NmMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4MjM3OnRyYW5zYWN0aW9uYWw6YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNTAzMTE6cm06RVM=>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-RPCampaign: Grouponactivationnotification20250311
+X-RPTags: activation_notification
+X-Recruiting: Interested in headers? Join us: www.groupon.com/techjobs/
+List-Id: <activation_notification.groupon>
+X-Feedback-ID: r.grouponmail.es:activation_notification:activation_notification_20250311:groupon
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000007,0.013273)], BW: [Enabled, t: (0.000019)], RTDA:
+ [Enabled, t: (0.073704), Hit: No, Details: v2.87.0; Id:
+ 20.wr4g4.1im2v6qh8.l3; mgx: 10_1383828d68ad653c13b1d6c401fdf939], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A00210B.67D05F15.0030:SCFSTAT89027815
+X-TLSLevel: Try
+X-OriginalArrivalTime: 11 Mar 2025 16:04:35.0660 (UTC)
+X-Spam-Status: No, score=1.5
+X-Spam-Score: 15
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Groupon En las cercaías Regalos Belleza y Spas 
+ Content analysis details:   (1.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [50.115.218.23 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: groupon.es]
+                             [URI: groupon.com]
+                             [URI: grouponcdn.com]
+                             [URI: bitdefender.com]
+                             [URI: grouponmail.es]
+  0.0 URIBL_DBL_BLOCKED      ADMINISTRATOR NOTICE: The query to dbl.spamhaus.org
+                              was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [URI: www.groupon.es]
+                             [URI: groupon.com]
+                             [URI: lsems.gravityzone.bitdefender.com]
+                             [URI: img.grouponcdn.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [50.115.218.23 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [50.115.218.23 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [50.115.218.23 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+                             background
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+X-Spam-Flag: NO
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns=3D"https://www.=
+w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn=
+:schemas-microsoft-com:office:office"> <head> <meta http-equiv=3D"Content-T=
+ype" content=3D"text/html; charset=3Dutf-8" /> <meta name=3D"format-detecti=
+on" content=3D"address=3Dno"> <meta name=3D"viewport" content=3D"width=3Dde=
+vice-width, initial-scale=3D1.0"> <title>Groupon</title> <style type=3D"tex=
+t/css"> .ExternalClass * { line-height: 100% } table { font-family: 'Open S=
+ans', Arial, sans-serif!important } table.helvetica { font-family: Helvetic=
+a, Arial, sans-serif !important; } table.ls_nav_font { font-family: Nunito,=
+ 'Open Sans', Arial, sans-serif!important } a, div, li, p, td { -webkit-tex=
+t-size-adjust: none } img[class=3D"100"] { width: 100%!important; min-width=
+: 100%!important; max-width: 100%!important } .appleLinks a, .appleLinksBla=
+ck a { color: #333!important; text-decoration: none } .appleLinksGrey a { c=
+olor: #75787b!important; text-decoration: none } .appleLinksGray a { color:=
+ #999!important; text-decoration: none } .appleLinksBlue a { color: #0093ea=
+!important; text-decoration: none } .bg-color:hover { background-color: #36=
+7806!important } @media only screen and (max-width:599px) { div[class=3Dpat=
+tern-80] , div[class=3Dpattern-105] , div[class=3Dpattern-117] { position: =
+relative!important; overflow: hidden!important; width: 100%!important } div=
+[class=3Dpattern-80] { height: 80px!important } div[class=3Dpattern-80] img=
+, div[class=3Dpattern-105] img, div[class=3Dpattern-117] img { position: ab=
+solute!important; top: 0!important; left: 50%!important; margin-left: -300p=
+x!important } div[class=3Dpattern-105] { height: 105px!important } div[clas=
+s=3Dpattern-117] { height: 117px!important } } .app_banner_image{ width: 20=
+0px; } .app_banner_container{ padding-left:32px; } .app_banner_toggle_mobil=
+e{ display:none; visibility:hidden!important; } @media only screen and (max=
+-width:580px) { table[class=3Douter_container] , table[class=3Dinner_contai=
+ner] { border-spacing: 0!important; border-collapse: collapse!important; ma=
+rgin: 0 auto!important; padding: 0!important } td[class=3DfloatLeft-ship] ,=
+ td[class=3DfloatLeft-name] { text-align: left!important; font-size: 13px!i=
+mportant; width: 100%!important; float: left!important } table[class=3Dcont=
+ainer] { margin: 0 auto!important; width: 100%!important; min-width: 100%!i=
+mportant } th[class=3Dcontainer] { margin: 0 auto!important; width: 100%!im=
+portant; height: auto !important; min-width: 100%!important; display: block=
+!important } th[class=3D"container mobile-padding"] { margin: 0 auto!import=
+ant; width: 100% !important; height: auto !important; min-width: 100% !impo=
+rtant; display: block !important; padding: 0 !important; } td[class=3Dconta=
+iner] { width: 100%!important; min-width: 100%!important; float: left!impor=
+tant; position: relative!important; padding: 0!important } table[class=3Dou=
+ter_container] { width: 95%!important } table[class=3Dinner_container] { wi=
+dth: 100%!important; min-width: 100%!important } td[class=3Dinner_container=
+] { width: 100%!important; background-size: 100%!important; margin: 0 auto!=
+important } td[class=3Dtd_featured] { width: 100%!important; height: 150px!=
+important; background-size: 100%!important; background-position: 100% 50%; =
+background-repeat: no-repeat; padding: 0!important; margin: 0 auto!importan=
+t } td[class=3Dw100] , td[class=3D"100"] { width: 100%!important; min-width=
+: 100%!important; height: auto!important; float: left!important } td[class=
+=3Dmobile-hdr-logo-center] { padding: 25px 0 10px!important } img[class=3Di=
+mg-mobile] , img[class=3D"100"] { width: 100%!important; min-width: 100%!im=
+portant; max-width: 100%!important } [class=3Dcollapse-left] , [class=3Dcol=
+lapse-right-rtl] { width: 100%!important; float: left!important; position: =
+relative!important; padding: 20px 0!important; } [class=3Dcollapse-right] ,=
+ [class=3Dcollapse-left-rtl] { width: 100%!important; float: left!important=
+; position: relative!important; padding: 20px 0!important; border: none!imp=
+ortant } td[class=3Dcollapse-trxn] { width: 100%!important; float: left!imp=
+ortant; position: relative!important; padding: 30px 0 0!important } td[clas=
+s=3Dcontainer-33] { min-width: 33%!important } td[class=3Dcol-4-mobile] { w=
+idth: 65%!important } td[class=3D"tax-mobile"] { white-space: normal !impor=
+tant; } td[class=3Dmobile-container-padding] { } td[class=3Dclo-redesign-co=
+ntainer-padding] { padding: 11px 37px 0!important } td[class=3Dmobile-conta=
+iner-padding-none] { padding: 0!important } td.ga-mobile-pad { padding: 20p=
+x 0 15px 10px!important } td[class=3Dweekend-mobile-container-padding] { pa=
+dding: 0 10px 20px!important } td[class=3Dmobile-container-nav-padding] { p=
+adding: 10px 0!important } td[class=3Dmobile-container-category] { padding:=
+ 10px!important } td[class=3DfloatLeft-ship] { border: 0!important; padding=
+: 5px 0 15px!important; line-height: 14px!important } td[class=3DfloatLeft-=
+name] { border: 0!important; padding: 5px 0!important; line-height: 14px!im=
+portant; font-weight: 700!important } td[class=3Dno-padding] { padding: 0!i=
+mportant } td[class=3Dno-border-no-padding] { padding: 0!important; border:=
+ none!important } .no-border { border: none!important } [class=3Ddisplay-of=
+f] { display: none!important } [class=3Dbadge-mobile] { font-size: 11px !im=
+portant; } [class=3Dmerchant-name-mobile] { font-size: 13px !important; hei=
+ght: auto !important; } [class=3Dratings-mobile] { font-size: 11px !importa=
+nt; vertical-align: middle !important; } [class=3Dprice-mobile] { font-size=
+:13px !important; } [class=3Dprice-padding] { padding-top: 6px !important; =
+display: inline !important; } [class=3Dpercent-mobile] { vertical-align: mi=
+ddle !important; } td[class=3Dshipment-col-4-mobile] { width: 50%!important=
+ } [class=3Dcontainer-white] { width: 100%!important; background-color: #ff=
+f!important; padding: 0!important } [class=3DtextAlignCenter] { text-align:=
+ center!important } table[class=3Dbutton-width] { width: 80px!important } t=
+d[class=3DviewButtonMobile] { padding: 12px 10px!important } [class=3Dmobil=
+e-banner] , [class=3Dmobile-banner-nopad] { width: 100%!important; max-heig=
+ht: none!important; height: auto!important; display: block!important; paddi=
+ng: 0!important; color: #000!important; font-size: 32px!important; line-hei=
+ght: 24px!important } [class=3Dmobile-banner-img] , [class=3Dmobile-banner-=
+img-holiday] , [class=3Dmobile-banner-img-bn] { color: #000!important; font=
+-size: 12px!important; display: block!important; width: 100%!important } [c=
+lass=3Dmobile-banner-img] { max-height: none!important; height: auto!import=
+ant; padding: 0!important } [class=3Dmobile-banner-img-holiday] { max-heigh=
+t: none!important; height: auto!important; padding: 16px 0 0!important } [c=
+lass=3Dmobile-banner-img-bn] { height: 100%!important; max-width: 154px!imp=
+ortant; max-height: 100%!important; padding: 0!important } img[class=3Dmobi=
+le-banner-img-bn] , img[class=3Dmobile-banner-img-bn-center] , img[class=3D=
+mobile-banner-img-bn-right] , img[class=3D"2up-image-mobile-bn"] { width: 1=
+00%!important; height: auto!important; display: block!important } [class=3D=
+mobile-banner-img-bn-center] , [class=3Dmobile-banner-img-bn-right] { width=
+: 100%!important; height: 100%!important; max-width: 154px!important; max-h=
+eight: 100%!important; padding: 0!important; display: block!important } [cl=
+ass=3D"2up-image-mobile-bn"] { width: 100%!important; height: 100%!importan=
+t; max-width: 230px!important; max-height: 100%!important; display: inline!=
+important; font-size: 0!important } [class=3Dmobile-banner-img-padding] , [=
+class=3Dmobile-banner-img-pad] { color: #000!important; font-size: 12px!imp=
+ortant; max-height: none!important; display: block!important; height: auto!=
+important; width: 100%!important } [class=3Dmobile-banner-img-padding] { pa=
+dding: 14px 0 0!important } [class=3Dmobile-banner-img-pad] { padding: 0 0 =
+10px!important } [class=3D"2up-image-mobile"] { width: 100%!important; max-=
+height: none!important; height: auto!important; display: block!important; f=
+loat: left!important } [class=3Dheading_style] { -webkit-text-size-adjust: =
+none!important; font-size: 13px!important; font-style: normal!important; fo=
+nt-variant: normal!important; font-weight: 400!important; font-family: Aria=
+l, Verdana, sans-serif!important; color: #cdf5ff!important; line-height: 18=
+px!important } [class=3Dfont-13] , td[class=3Dmobile-font] { font-size: 13p=
+x!important } span[class=3DnameFont] , td[class=3DnameFont] , td[class=3Dhe=
+roNameFont] { font-size: 18px!important; line-height: 22px!important } td[c=
+lass=3DthemeFont] { font-size: 30px!important; line-height: 34px!important =
+} a[class=3DheroNameFont] { text-decoration: none!important; font-size: 18p=
+x!important; line-height: 22px!important } [class=3Dfont-10] , [class=3Dfon=
+t-10-trxnl] { font-size: 10px!important; line-height: 16px!important } [cla=
+ss=3Dfont-10-trxnl] { padding: 16px 0 0!important } [class=3Dfont-12] { fon=
+t-size: 12px!important } [class=3Dfont-13-padding] { font-size: 13px!import=
+ant; padding: 0!important } [class=3Dfont-16] { font-size: 16px!important }=
+ [class=3Dfont-18] { font-size: 18px!important } [class=3Dfont-24] { font-s=
+ize: 24px!important } img[class=3Dglive-deal-image] { width: 80%!important;=
+ height: auto!important; display: block; margin: 0 auto; padding: 0 } [clas=
+s=3Duniversal-padding] { padding: 31px 14px 28.5px!important } [class=3Duni=
+versal-padding-trxnl] { padding: 24px 24px 32px!important } [class=3Dapp-lo=
+go] { width: 29px!important } td[class=3Dapp-text] { padding: 7px 0 0 5px!i=
+mportant } img[class=3Dinstagram-logo] { width: 22px!important } img[class=
+=3Dfacebook-logo] { width: 9.5px!important } img[class=3Dtwitter-logo] { wi=
+dth: 27px!important } td[class=3Dinstagram-logo] { } td[class=3Dfacebook-lo=
+go] { } td[class=3Dtwitter-logo] { } div[class=3Dgmailfix] { display: none;=
+ display: none!important } [class=3DpostcardButtonPadding] { padding: 10px =
+0 0 1px!important } [class=3Done_hundred] { width: 100%!important; min-widt=
+h: 100%!important; max-width: 100%!important } [class=3Dno-padding] { paddi=
+ng: 0!important } .display_block, [class=3Ddisplay_block] { display: block!=
+important } .border-top { border-left: none!important; border-top: 1px soli=
+d #000; border-collapse: collapse; display: block } .two-up-title { font-si=
+ze: 13px !important; line-height: 1.38 !important; } .two-up-badge-icon { w=
+idth: 12px !important; height: auto !important; } .one-up-badge-icon { widt=
+h: 16px !important; height: auto !important; } [class=3Dstar-mobile] { heig=
+ht: auto !important; } th.fifty-percent { width: 50% !important; } [class=
+=3Dgoogle-mobile] { padding: 13px 0 0 0 !important; } } @media only screen =
+and (max-width: 580px) { .tr-footer-new, .td-footer-new, .table-footer-new{=
+ width: 100% !important; display: block !important; text-align: center !imp=
+ortant; padding-right: 0 !important; padding-left: 0 !important; } .tr-bann=
+er-new, .td-banner-new, .table-banner-new{ width: 100% !important; display:=
+ block !important; padding-right: 0 !important; padding-left: 0 !important;=
+ } .tr-footer-new-links, .td-footer-new-links{ display: inline-block !impor=
+tant; width: auto !important; padding: 0 !important; } .td-button-new{ widt=
+h: 150px !important; padding-right: 0 !important; padding-left: 0 !importan=
+t; } .outer-container-new{ width:580px; } .inner-container-new-1{ width: 37=
+0px; } .inner-container-new-2{ width: 170.06px; } .inner-container-new-3{ w=
+idth: 24px; } .inner-container-new-4{ width: 550px; } .image-container-new{=
+ width: 374.14px; } .new-620-240{ width: 240px; } .new-640-320{ width: 240p=
+x; } .new-293-214{ width: 214px; } .outer-container-new{ width:580px; } .in=
+ner-container-new-1{ width: 370px; } .inner-container-new-2{ width: 170.06p=
+x; } .inner-container-new-3{ width: 24px; } .inner-container-new-4{ width: =
+550px; } .image-container-new{ width: 374.14px; } .new-720-360{ width: 550p=
+x; } .new-text-360{ max-width: 400px; } .app_banner_heading{ font-size: 20p=
+x; } .app_banner_image{ width: 120px; padding-top:10px; margin-right:-30px;=
+ } .app_banner_container{ padding-left:20px; } .app_banner_toggle{ display:=
+block; visibility:visible !important; margin-top:3px !important; } .app_ban=
+ner_toggle_mobile{ display:block; visibility:visible !important; padding-le=
+ft:20px } .new-640-320{ width: 420px; } .new-293-214{ width: 214px; } .oute=
+r-td-new { display: block; width: 100% !important; box-sizing: border-box; =
+} .outer-td-new-personalize{ display: block; width: 100% !important; box-si=
+zing: border-box; text-align: left !important; margin: 0 !important; } .out=
+er-td-new-per{ display: block; width: 90% !important; box-sizing: border-bo=
+x; } .inner-td-new { width: 100% !important; max-width: none !important; } =
+.outer-td-new-deals { display: block; width: 550px !important; box-sizing: =
+border-box; } .inner-td-new-deals { width: 100% !important; max-width: none=
+ !important; } .hr-line-new { width:2%; border-bottom: 1px solid #dadbdd; m=
+argin: 10px; } .tradein_container { width: 550px; overflow-x: auto; font-fa=
+mily: Helvetica, Arial, sans-serif ; border: 1px solid #d8d8d8; border-radi=
+us: 10px; margin: auto; } .promo-container-mobile { display: block !importa=
+nt; } .promo-container-desktop { display: none; } } @media only screen and =
+(min-width: 580px) { .new-620-240{ width: 620px; } .outer-container-new{ wi=
+dth:800px; } .inner-container-new-1{ width: 730px; } .inner-container-new-2=
+{ width: 100%; max-width: 178.25px; } .new-293-214{ width: 293px; } .new-64=
+0-320{ width: 680px; } .inner-container-new-4{ width: 550px; } .image-conta=
+iner-new{ width: 638px; } .new-720-360{ width: 720px; } .hr-line-new { widt=
+h:2%; border-right: 1px solid #dadbdd } .outer-container-new{ width:800px; =
+} .inner-container-new-1{ width: 730px; } .inner-container-new-2{ width: 10=
+0%; max-width: 178.25px; } .new-293-214{ width: 293px; } .new-640-320{ widt=
+h: 680px; } .inner-container-new-4{ width: 550px; } .image-container-new{ w=
+idth: 638px; } .new-720-360{ width: 720px; } .hr-line-new { width:2%; borde=
+r-right: 1px solid #dadbdd } .tradein_container { width: 100%; overflow-x: =
+auto; font-family: Helvetica, Arial, sans-serif ; border: 1px solid #d8d8d8=
+; border-radius: 10px; margin: auto; } } </style> <!--[if !mso]><!--> <styl=
+e> @media only screen and (max-width: 580px) { .app-store-mobile { width: 1=
+13px !important; height: 37px !important; } .google-play-mobile { width: 12=
+9px !important; height: 37px !important; } } </style> <!--<![endif]--> <lin=
+k href=3D'https://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly9mb250cy=
+5nb29nbGVhcGlzLmNvbS9jc3M!ZmFtaWx5PU9wZW4rU2FuczoxMDAsMjAwLDQwMCwzMDAsNTAwL=
+DYwMCw3MDAsODAw/80291FC29D26B34140CB58A9259236CAD3A12305E5CBEF7CA2FE9294A21=
+E3AFE?c=3D1&i=3D1&docs=3D1' rel=3D'stylesheet' type=3D'text/css' /> <link h=
+ref=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly9mb250cy5nb=
+29nbGVhcGlzLmNvbS9jc3M!ZmFtaWx5PU51bml0bzo3MDA=3D/65F65AED481AFA5DEFB0942CB=
+02BCC782595B78A10AD181CE9A6DFEC15589E62?c=3D1&i=3D1&docs=3D1" rel=3D"styles=
+heet"> <link href=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR0cHM=
+6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M!ZmFtaWx5PU51bml0bytTYW5zOjQwMCw2MDAsNz=
+Aw/014A56641B902E9739F6891C5F3C2FA0EF277BA1639B787B75C76AA5C1855588?c=3D1&i=
+=3D1&docs=3D1" rel=3D"stylesheet"> </head> <body style=3D"margin:0 !importa=
+nt; padding:0 !important; background: #f2f2f2 !important;"> <img src =3D "h=
+ttps://www.groupon.es/analytic/trackintl.gif?p=3D1&utm_domain=3Dsecureitmx.=
+com&utm_campaign=3Dactivation_notification_20250311&deals=3D&nlp=3D&CID=3DE=
+S&uu=3D8566c1c0-fe92-11ef-98c6-76d897578237&utm_source=3Dtransactional&utm_=
+medium=3Demail&utm_id=3DNULL&utm_campaign=3Dactivation_notification&sid=3Da=
+ctivation_notification_20250311&utm_sendid=3Dactivation_notification_202503=
+11&date=3D20251103&sender=3Drm&s=3Dbody&c=3Dtracking_pixel_uuid&d=3Dnone" h=
+eight=3D"1" width=3D"1" style=3D"display: none !important;" /> <table cellp=
+adding=3D"0" cellspacing=3D"0" style=3D"border: 0 none; border-spacing: 0; =
+font-family: 'Open Sans', Helvetica, Arial, sans-serif; color:#000000; font=
+-weight: normal; text-align: left; background: #008A22;" class=3D"outer-con=
+tainer-new" align=3D"center"> <tr> <td style=3D" padding: 30px 0 30px 0;" c=
+lass=3D"outer-container-new" align=3D"center"> <span style=3D"color: #fffff=
+f; height: 0px; font-size: 0px !important;" height=3D"0"> <span class=3D"pr=
+eviewCopy" height=3D"0" style=3D"font-size: 1px !important; height: 0px; di=
+splay: none;"> </span> </span> <table cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"border: 0 none; border-spacing: 0; font-family: 'Open Sans', Helvet=
+ica, Arial, sans-serif; color:#000000; font-weight: normal; text-align: lef=
+t; " align=3D"center" class=3D"outer-container-new"> <tr> <td align=3D"cent=
+er" class=3D"outer-container-new"> <table cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"border: 0 none; border-spacing: 0; font-family: 'Open Sans', He=
+lvetica, Arial, sans-serif; color:#000000; font-weight: normal; text-align:=
+ left; width: 100%;" width=3D"100%"> <tr> <td align=3D"center" valign=3D"to=
+p" class=3D""><a href=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR=
+0cHM6Ly93d3cuZ3JvdXBvbi5lcz9ubHA9JkNJRD1FUyZ1dT04NTY2YzFjMC1mZTkyLTExZWYtOT=
+hjNi03NmQ4OTc1NzgyMzcmdXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsJnV0bV9tZWRpdW09ZW1ha=
+WwmdXRtX2lkPU5VTEwmdXRtX2NhbXBhaWduPWFjdGl2YXRpb25fbm90aWZpY2F0aW9uJnNpZD1h=
+Y3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yMDI1MDMxMSZ1dG1fc2VuZGlkPWFjdGl2YXRpb25fbm9=
+0aWZpY2F0aW9uXzIwMjUwMzExJmRhdGU9MjAyNTExMDMmc2VuZGVyPXJtJnM9aGVhZGVyJmM9aW=
+1hZ2UmZD1Hcm91cG9uJnV0bV90ZXJtPWhlYWRlcl9pY29ucw=3D=3D/5FB6542A2E05F231F43B=
+38D3175EF682602DB660AD2E11CF8D624017FFE4FE09?c=3D1&i=3D1&docs=3D1" target=
+=3D"_blank"><img src=3D"https://img.grouponcdn.com/deal/3uu7VPqWDedBsnitRFR=
+nEGz5dSLk/3u-214x40" style=3D"display: block; border: none; width:px;" alt=
+=3D"Groupon" width=3D"" /></a> </td> </tr> </table> </td> </tr> </table> </=
+td> </tr> </table> <table cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; background: #f2f2f2;" align=3D"center"> <tr> <table cellpadding=3D=
+"0" cellspacing=3D"0" style=3D"width: 670px; background: #ffffff;" bgcolor=
+=3D"#ffffff" align=3D"center" class=3D"container"> <tr> <td align=3D"center=
+"> <table cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 600px; min-wi=
+dth:600px; background: #ffffff;" bgcolor=3D"#ffffff" align=3D"center" class=
+=3D"container"> <tr> <td align=3D"center" style=3D"padding: 20px 0 40px 0;"=
+ class=3D"mobile-container-padding"> <body style=3D"font-family: Helvetica,=
+ sans-serif;"> <table align=3D"center" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0"> <tr align=3D"center"> <td align=3D"center"> <t=
+able align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"table-layout: fixed;" class=3D"new-720-360"> <tr align=3D"center"> <td=
+ align=3D"center" style=3D"" class=3D"new-720-360"> <a href=3D"https://lsem=
+s.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lcy9vZmVydGFz=
+P3RvcGNhdGVnb3J5PWxvY2FsJj9ubHA9JkNJRD1FUyZ1dT04NTY2YzFjMC1mZTkyLTExZWYtOTh=
+jNi03NmQ4OTc1NzgyMzcmdXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsJnV0bV9tZWRpdW09ZW1haW=
+wmdXRtX2lkPU5VTEwmdXRtX2NhbXBhaWduPWFjdGl2YXRpb25fbm90aWZpY2F0aW9uJnNpZD1hY=
+3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yMDI1MDMxMSZ1dG1fc2VuZGlkPWFjdGl2YXRpb25fbm90=
+aWZpY2F0aW9uXzIwMjUwMzExJmRhdGU9MjAyNTExMDMmc2VuZGVyPXJtJnM9Ym9keSZjPWxpbms=
+mZD0mdXRtX3Rlcm09aGVhZGVyX2ljb25zJg=3D=3D/ED46C1B0769819AAF37B406821B9CD265=
+B153AB79A9AA6EEC8485DA0009D5EBD?c=3D1&i=3D1&docs=3D1" target=3D"_blank" sty=
+le=3D"color:#0185C6; text-decoration:none; color:black; margin-right:30px;"=
+> <img src=3D"https://img.grouponcdn.com/deal/3CCJ3B4dNV7nqDrWbWigKJDT1qon/=
+3C-20x20" alt=3D"Travel" style=3D"height: 14px;" /> <span style=3D"font-siz=
+e: 16px;line-height: 16px;"> En las cerca=C3=ADas </span> </a> <a href=3D"h=
+ttps://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lc=
+y9yZWdhbG8!bmxwPSZDSUQ9RVMmdXU9ODU2NmMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4=
+MjM3JnV0bV9zb3VyY2U9dHJhbnNhY3Rpb25hbCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9pZD1OVUx=
+MJnV0bV9jYW1wYWlnbj1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbiZzaWQ9YWN0aXZhdGlvbl9ub3=
+RpZmljYXRpb25fMjAyNTAzMTEmdXRtX3NlbmRpZD1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yM=
+DI1MDMxMSZkYXRlPTIwMjUxMTAzJnNlbmRlcj1ybSZzPWJvZHkmYz1saW5rJmQ9JnV0bV90ZXJt=
+PWhlYWRlcl9pY29ucyY=3D/6629F42D40D98416CA6CED99AD5093D74C23081EEABADB0BF6B2=
+89B88D6AB908?c=3D1&i=3D1&docs=3D1" target=3D"_blank" style=3D"color:#0185C6=
+; text-decoration:none; color:black; margin-right:30px;"> <img src=3D"https=
+://img.grouponcdn.com/deal/4JdbTprgVhmAYBt1U5Q9RWyyfQmj/4J-25x24" alt=3D"Gi=
+fts" style=3D"height: 14px; " /> <span style=3D"font-size: 16px;line-height=
+: 16px;"> Regalos </span> </a> <a href=3D"https://lsems.gravityzone.bitdefe=
+nder.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lcy9vZmVydGFzL2JlbGxlemE!bmxwPSZDS=
+UQ9RVMmdXU9ODU2NmMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4MjM3JnV0bV9zb3VyY2U9=
+dHJhbnNhY3Rpb25hbCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9pZD1OVUxMJnV0bV9jYW1wYWlnbj1=
+hY3RpdmF0aW9uX25vdGlmaWNhdGlvbiZzaWQ9YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNT=
+AzMTEmdXRtX3NlbmRpZD1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yMDI1MDMxMSZkYXRlPTIwM=
+jUxMTAzJnNlbmRlcj1ybSZzPWJvZHkmYz1saW5rJmQ9JnV0bV90ZXJtPWhlYWRlcl9pY29ucyY=
+=3D/81CEE978F1C168293AE07C6D511B1EF878F1E7B40D9DAAAA6299193AE3329799?c=3D1&=
+i=3D1&docs=3D1" target=3D"_blank" style=3D"color:#0185C6; text-decoration:n=
+one; color:black; "> <img src=3D"https://img.grouponcdn.com/deal/FrhUGEmtyk=
+F1mUzJFZE4mGR1v35/Fr-25x24" alt=3D"Beauty & Spas" style=3D"height: 16px;" /=
+> <span style=3D"font-size: 16px;line-height: 14px;"> Belleza y Spas </span=
+> </a> </td> <!-- Repeat for other cells --> </tr> </table> <div class=3D"n=
+ew-720-360" style=3D"border-top: 1px solid #dadbdd; margin-top:10px;"> <br>=
+ </td> </tr> <tr align=3D"center"> <td align=3D"center"> <table align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"outer-conta=
+iner-new" style=3D"border-collapse: collapse;"> <tr align=3D"center"> <td a=
+lign=3D"center" style=3D"background-color: white; color: #ffffff; text-alig=
+n: center; background-repeat: no-repeat;"> <table align=3D"center"> <tr ali=
+gn=3D"center"> <td class=3D"outer-container-new"> <h1 class=3D"new-720-360"=
+ style=3D"font-size: 32px; color: black; "> =C2=A1Gracias por unirte! </h1>=
+ <p class=3D"new-720-360" style=3D" font-size: 16px; color: black; color: #=
+111827"> Te va a encantar. </p> <p class=3D"new-720-360" style=3D" font-siz=
+e: 16px; color: black; color: #111827"> Revisa tu bandeja de entrada todos =
+los d=C3=ADas para descubrir ofertas de Groupon con grandes descuentos en s=
+abrosas comidas, relajantes d=C3=ADas de spa, conciertos, hoteles de 5 estr=
+ellas y mucho m=C3=A1s. </p> <p class=3D"new-720-360" style=3D" font-size: =
+16px; color: black; color: #111827"> Para completar tu registro en Groupon,=
+ verifica tu correo electr=C3=B3nico. </p> </td> </tr> <tr> <td align=3D"ce=
+nter"> <table align=3D"center" width=3D"100%" height=3D"100%" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; padding: 10px; bord=
+er: 0; font-size: 100%; font: inherit; vertical-align: baseline; box-sizing=
+: border-box; width: 100%; max-width: 180px; height: 44px; background-color=
+: rgba(0, 138, 34, 1); border-radius:30px"> <tr align=3D"center"> <td align=
+=3D"center" valign=3D"middle"> <a target=3D"_blank" class=3D"text-wrapper-2=
+" style=3D"font-size: 16px; font-family: 'NunitoSans-Bold', Helvetica; font=
+-weight: 700; color: #FFFFFF; text-align: center; text-decoration:none;" hr=
+ef=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdX=
+Bvbi5lcy91c2Vycy9hY3RpdmF0ZS9jNmJiNGU4ODBjNDFmOWNkMjZlZjI4Yzg1Mzg5YzYwY2EyN=
+Tc3YjM4P3V0bV90ZXJtPUNUQV9idXR0b24mbmxwPSZDSUQ9RVMmdXU9ODU2NmMxYzAtZmU5Mi0x=
+MWVmLTk4YzYtNzZkODk3NTc4MjM3JnV0bV9zb3VyY2U9dHJhbnNhY3Rpb25hbCZ1dG1fbWVkaXV=
+tPWVtYWlsJnV0bV9pZD1OVUxMJnV0bV9jYW1wYWlnbj1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbi=
+ZzaWQ9YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNTAzMTEmdXRtX3NlbmRpZD1hY3RpdmF0a=
+W9uX25vdGlmaWNhdGlvbl8yMDI1MDMxMSZkYXRlPTIwMjUxMTAzJnNlbmRlcj1ybSZzPWJvZHkm=
+Yz1idXR0b24mZD12ZXJpZnktYWNjb3VudA=3D=3D/2A3CB736E2884419B36C4FBF55BACC9727=
+528A90D1761616F82F05CF1946EF2E?c=3D1&i=3D1&docs=3D1"> Verificar cuenta </a>=
+ </td> </tr> </table> <br> <div class=3D"new-720-360" style=3D" border-top:=
+ 1px solid #dadbdd; margin-top:10px;"></div> <br> </td> </tr> <tr align=3D"=
+center"> <td align=3D"center" style=3D" width: 72px;color: black; "> <table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D=
+"new-720-360" style=3D"font-family: Helvetica, sans-serif; background-color=
+: #e5fde7; text-align: center; padding: 20px; border-radius: 19.5px;"> <tr =
+align=3D"center"> <td> <table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" class=3D"new-640-320" style=3D"table-layout: fixed; ">=
+ <tr align=3D"center"> <td align=3D"center" style=3D"width: 100%; max-width=
+: 118px;"> <a href=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR0cH=
+M6Ly93d3cuZ3JvdXBvbi5lcz91dG1fdGVybT1SVEJfaWNvbnMmbmxwPSZDSUQ9RVMmdXU9ODU2N=
+mMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4MjM3JnV0bV9zb3VyY2U9dHJhbnNhY3Rpb25h=
+bCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9pZD1OVUxMJnV0bV9jYW1wYWlnbj1hY3RpdmF0aW9uX25=
+vdGlmaWNhdGlvbiZzaWQ9YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNTAzMTEmdXRtX3Nlbm=
+RpZD1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yMDI1MDMxMSZkYXRlPTIwMjUxMTAzJnNlbmRlc=
+j1ybSZzPWZvb3RlciZjPWxpbmsmZD1kZWFscy1pY29u/4A8C5C96A01445F91F6D1B8220E0BF9=
+C4B4051CE8541C05535D161EABA41DF8A?c=3D1&i=3D1&docs=3D1" style=3D"text-decor=
+ation:none;"> <img src=3D"https://img.grouponcdn.com/deal/KEypQzuW7ALr7St1V=
+odMiH6Zsj3/KE-38x38" height=3D"48" alt=3D"Image" style=3D"margin-bottom: 10=
+px;"> <div style=3D"font-size:13px; font-weight: 600; color:black;"> Miles =
+</div> <div style=3D"font-size:13px; font-weight: 600; color:black;"> de id=
+eas para regalar </div> </a> </td> <td align=3D"center" style=3D"width: 100=
+%; max-width: 118px;"> <a href=3D"https://lsems.gravityzone.bitdefender.com=
+/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lcz91dG1fdGVybT1SVEJfaWNvbnMmbmxwPSZDSUQ9R=
+VMmdXU9ODU2NmMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4MjM3JnV0bV9zb3VyY2U9dHJh=
+bnNhY3Rpb25hbCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9pZD1OVUxMJnV0bV9jYW1wYWlnbj1hY3R=
+pdmF0aW9uX25vdGlmaWNhdGlvbiZzaWQ9YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNTAzMT=
+EmdXRtX3NlbmRpZD1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yMDI1MDMxMSZkYXRlPTIwMjUxM=
+TAzJnNlbmRlcj1ybSZzPWZvb3RlciZjPWxpbmsmZD1kZWFscy1pY29u/4A8C5C96A01445F91F6=
+D1B8220E0BF9C4B4051CE8541C05535D161EABA41DF8A?c=3D1&i=3D1&docs=3D1" style=
+=3D"text-decoration:none;"> <img src=3D"https://img.grouponcdn.com/deal/3GN=
+8yNAnkoUCbjSZwhQYtvjpDcXb/3G-42x36" height=3D"48" alt=3D"Image" style=3D"ma=
+rgin-bottom: 10px;"> <div style=3D"font-size:13px; font-weight: 600; color:=
+black;"> Miles </div> <div style=3D"font-size:13px; font-weight: 600; color=
+:black;"> de oportunidades de ahorro </div> </a> </td> <td align=3D"center"=
+ style=3D"width: 100%; max-width: 118px;"> <a href=3D"https://lsems.gravity=
+zone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lcz91dG1fdGVybT1SVEJfa=
+WNvbnMmbmxwPSZDSUQ9RVMmdXU9ODU2NmMxYzAtZmU5Mi0xMWVmLTk4YzYtNzZkODk3NTc4MjM3=
+JnV0bV9zb3VyY2U9dHJhbnNhY3Rpb25hbCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9pZD1OVUxMJnV=
+0bV9jYW1wYWlnbj1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbiZzaWQ9YWN0aXZhdGlvbl9ub3RpZm=
+ljYXRpb25fMjAyNTAzMTEmdXRtX3NlbmRpZD1hY3RpdmF0aW9uX25vdGlmaWNhdGlvbl8yMDI1M=
+DMxMSZkYXRlPTIwMjUxMTAzJnNlbmRlcj1ybSZzPWZvb3RlciZjPWxpbmsmZD1kZWFscy1pY29u=
+/4A8C5C96A01445F91F6D1B8220E0BF9C4B4051CE8541C05535D161EABA41DF8A?c=3D1&i=
+=3D1&docs=3D1" style=3D"text-decoration:none;"> <img src=3D"https://img.gro=
+uponcdn.com/deal/31uoPMxTGP6VuoJK7nJkvUxchHxZ/31-49x48" height=3D"48" alt=
+=3D"Icons" style=3D"margin-bottom: 10px;"> <div style=3D"font-size:13px; fo=
+nt-weight: 600; color:black;"> Millones </div> <div style=3D"font-size:13px=
+; font-weight: 600; color:black;"> de clientes satisfechos </div> </a> </td=
+> </tr> </table> </td> </tr> </table> </td> </tr> <tr align=3D"center"> <td=
+ align=3D"center"> <a target=3D"_blank" style=3D" text-decoration:none;" hr=
+ef=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdX=
+Bvbi5lcz9ubHA9JkNJRD1FUyZ1dT04NTY2YzFjMC1mZTkyLTExZWYtOThjNi03NmQ4OTc1NzgyM=
+zcmdXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsJnV0bV9tZWRpdW09ZW1haWwmdXRtX2lkPU5VTEwm=
+dXRtX2NhbXBhaWduPWFjdGl2YXRpb25fbm90aWZpY2F0aW9uJnNpZD1hY3RpdmF0aW9uX25vdGl=
+maWNhdGlvbl8yMDI1MDMxMSZ1dG1fc2VuZGlkPWFjdGl2YXRpb25fbm90aWZpY2F0aW9uXzIwMj=
+UwMzExJmRhdGU9MjAyNTExMDMmc2VuZGVyPXJtJnM9Ym9keSZjPWxpbmsmZD1teWdyb3Vwb25zJ=
+nV0bV90ZXJtPXNob3BfYWxsX2RlYWxz/D94A18EDC81A12A60934ECF6B96AA4201C01809E5BA=
+CA34D9D4E76C5A018690D?c=3D1&i=3D1&docs=3D1"> <table align=3D"center" border=
+=3D"0" class=3D"new-720-360" cellspacing=3D"0" cellpadding=3D"0" class=3D"f=
+rame-inside" style=3D"margin: 0; padding: 0; border: 0; font-size: 100%; fo=
+nt: inherit; vertical-align: baseline; box-sizing: border-box; margin:17px;=
+"> <tr align=3D"center"> <td align=3D"center"> <table align=3D"center" widt=
+h=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#230=
+F33" style=3D"margin: 0; padding: 0; border: 0; font-size: 100%; font: inhe=
+rit; vertical-align: baseline; border-radius: 20px;box-sizing: border-box; =
+" class=3D"new-720-360"> <tr align=3D"center"> <td align=3D"center"> <table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D=
+"frame-inside" style=3D"margin: 0; padding: 0; border: 0; font-size: 100%; =
+font: inherit; vertical-align: baseline; box-sizing: border-box; margin:17p=
+x;" class=3D"new-720-360"> <tr align=3D"center"> <td align=3D"center" class=
+=3D"outer-td-new" style=3D"width: 100%; width: 420px; "> <table align=3D"le=
+ft"> <tr align=3D"left"> <td align=3D"left" class=3D"inner-td-new"> <div st=
+yle=3D"width: 100%; max-width: 420px;"> <div style=3D" width: 100%; max-wid=
+th: 420px; top: 0; left: 0; text-shadow: 0px 1px 8px -3px #080d1b4c; font-f=
+amily: 'DM Serif Display-Regular', serif; font-weight: 800; color: #4fe81c;=
+ font-size: 32px; letter-spacing: 0; line-height: 38.4px;"> Obt=C3=A9n hast=
+a un 75% de descuento </div> </div> </td> </tr> <tr align=3D"left"> <td ali=
+gn=3D"left" class=3D"inner-td-new"> <div style=3D"width: 100%; max-width: 4=
+20px; "> <div style=3D" width: 100%; max-width: 420px; top: 0; left: 0; tex=
+t-shadow: 0px 1px 8px -3px #080d1b4c; font-family: 'Nunito Sans', sans-seri=
+f; font-weight: 400; color: #ffffff; font-size: 16px;"> <div> <p> Actividad=
+es, comidas, belleza, hogar y m=C3=A1s! </p> </div> </div> </div> </td> </t=
+r> </table> </td> <td align=3D"center" class=3D"outer-td-new"> <table align=
+=3D"center" width=3D"100%" height=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"margin: 0; padding: 10px; border: 0; font-size: 1=
+00%; font: inherit; vertical-align: baseline; box-sizing: border-box; width=
+: 100%; min-width:180px;max-width:360px; height: 44px; background-color: rg=
+ba(0, 138, 34, 1); border-radius:30px"> <tr align=3D"center"> <td align=3D"=
+center" valign=3D"middle"> <a target=3D"_blank" class=3D"text-wrapper-2" st=
+yle=3D"font-size: 16px; font-family: 'NunitoSans-Bold', Helvetica; font-wei=
+ght: 700; color: #FFFFFF; text-align: center; text-decoration:none;" href=
+=3D"https://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBv=
+bi5lcz9ubHA9JkNJRD1FUyZ1dT04NTY2YzFjMC1mZTkyLTExZWYtOThjNi03NmQ4OTc1NzgyMzc=
+mdXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsJnV0bV9tZWRpdW09ZW1haWwmdXRtX2lkPU5VTEwmdX=
+RtX2NhbXBhaWduPWFjdGl2YXRpb25fbm90aWZpY2F0aW9uJnNpZD1hY3RpdmF0aW9uX25vdGlma=
+WNhdGlvbl8yMDI1MDMxMSZ1dG1fc2VuZGlkPWFjdGl2YXRpb25fbm90aWZpY2F0aW9uXzIwMjUw=
+MzExJmRhdGU9MjAyNTExMDMmc2VuZGVyPXJtJnM9Ym9keSZjPWxpbmsmZD1teWdyb3Vwb25zJnV=
+0bV90ZXJtPXNob3BfYWxsX2RlYWxz/D94A18EDC81A12A60934ECF6B96AA4201C01809E5BACA=
+34D9D4E76C5A018690D?c=3D1&i=3D1&docs=3D1"> Compra todas las ofertas </a> </=
+td> </tr> </table> </td> </tr> </table> </td> </tr> </table> </td> </tr> </=
+table> </a> </td> </tr> </table> </td> </tr> </table> </body> </td> </tr> <=
+/table> </td> </tr> </table> <table cellpadding=3D"0" cellspacing=3D"0" sty=
+le=3D"border: 0 none; border-spacing: 0; font-family: 'Open Sans', Helvetic=
+a, Arial, sans-serif; color:#000000; font-weight: normal; text-align: left;=
+ width: 100%; background: #f2f2f2;" align=3D"center"> <tr> <td align=3D"cen=
+ter" style=3D"padding: 30px 0 0 0;"> <table cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width: 600px; background: #f2f2f2;" align=3D"center" class=
+=3D"container"> <tr> <td style=3D"font-size: 13px; color: #999999; line-hei=
+ght: 120%; padding: 10px 10px 10px 10px; text-align:center;" align=3D"cente=
+r" class=3D"mobile-font">Para presentar tu negocio en Groupon, <a href=3D"h=
+ttps://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lc=
+y9tZXJjaGFudD9ubHA9JkNJRD1FUyZ1dT04NTY2YzFjMC1mZTkyLTExZWYtOThjNi03NmQ4OTc1=
+NzgyMzcmdXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsJnV0bV9tZWRpdW09ZW1haWwmc2lkPWFjdGl=
+2YXRpb25fbm90aWZpY2F0aW9uXzIwMjUwMzExJmRhdGU9MjAyNTExMDMmc2VuZGVyPXJtJnM9Zm=
+9vdGVyJmM9bGluayZkPXdlbGNvbWUtdW5zdWJzY3JpYmU=3D/D0D7FFB53B6B028E25D3E065A4=
+391C0E61595084919AB54DA572D7B1F3DAF6E7?c=3D1&i=3D1&docs=3D1" style=3D"color=
+:#0185C6; text-decoration:none;">comienza</a> en Groupon Merchant.</td> </t=
+r> <tr> <td style=3D"font-size: 13px; color: #999999; line-height: 120%; pa=
+dding: 10px 10px 10px 10px; text-align:center;" align=3D"center" class=3D"m=
+obile-font"></td> </tr> <tr> <td style=3D"font-size: 13px; color: #999999; =
+line-height: 120%; padding: 10px 10px 10px 10px; text-align:center;" align=
+=3D"center" class=3D"mobile-font"> Enviado por Groupon International Limite=
+d,WeWork Central Plaza, 36 Dame Street, Dublin D02 EF64 Irlanda, NIF:501358=
+. Si su cuenta a=C3=BAn no ha sido transferida a Groupon International Limi=
+ted, este email ha sido enviado por Groupon Spain S.L.U. </td> </tr> <tr> <=
+td style=3D"font-size: 13px; color: #999999; line-height: 120%; padding: 10=
+px 10px 10px 10px; text-align:center;" align=3D"center" class=3D"mobile-fon=
+t"> <span style=3D"font-weight:bold;"> =C2=BFNecesitas ayuda? <a href=3D"ht=
+tps://lsems.gravityzone.bitdefender.com/scan/aHR0cHM6Ly93d3cuZ3JvdXBvbi5lcy=
+9jdXN0b21lcl9zdXBwb3J0P25scD0mQ0lEPUVTJnV1PTg1NjZjMWMwLWZlOTItMTFlZi05OGM2L=
+Tc2ZDg5NzU3ODIzNyZ1dG1fc291cmNlPXRyYW5zYWN0aW9uYWwmdXRtX21lZGl1bT1lbWFpbCZz=
+aWQ9YWN0aXZhdGlvbl9ub3RpZmljYXRpb25fMjAyNTAzMTEmZGF0ZT0yMDI1MTEwMyZzZW5kZXI=
+9cm0mcz1mb290ZXImYz1saW5rJmQ9Y29udGFjdA=3D=3D/F241373CEFC8CCB607B73197150C3=
+20612AED4D1E7EFE7B0A9C282DC4A024EB0?c=3D1&i=3D1&docs=3D1" style=3D"color:#0=
+185C6; text-decoration:none;" target=3D"_blank"> Contacta</a> con Groupon <=
+/span> </td> </tr> </table> </td> </tr> </table> </tr> </table> <img src =
+=3D "https://groupon.com/analytic/track.gif?p=3D2&utm_domain=3Dsecureitmx.c=
+om&utm_campaign=3Dactivation_notification_20250311&deals=3D&utm_source=3Dtr=
+ansactional&utm_medium=3Demail& date=3D20250311&uu=3D8566c1c0-fe92-11ef-98c=
+6-76d897578237&CID=3DES" height=3D"1" width=3D"1" style=3D"display: none !i=
+mportant;" /> </body> </html>=
+

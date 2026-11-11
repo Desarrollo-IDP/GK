@@ -1,0 +1,130 @@
+Return-Path: <rblancasrico@gmail.com>
+Delivered-To: raulblancas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id MBtaMgXs0WclDCMA87FxYg
+	(envelope-from <rblancasrico@gmail.com>)
+	for <raulblancas@secureitmx.com>; Wed, 12 Mar 2025 16:18:13 -0400
+Return-path: <rblancasrico@gmail.com>
+Envelope-to: raulblancas@secureitmx.com
+Delivery-date: Wed, 12 Mar 2025 16:18:13 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:3905 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <rblancasrico@gmail.com>)
+	id 1tsSWm-00000009eZi-2SFm
+	for raulblancas@secureitmx.com;
+	Wed, 12 Mar 2025 16:18:13 -0400
+Authentication-Results: CNUSMTA1-1.us.scanscope.net; spf=pass
+ smtp.mailfrom=rblancasrico@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-oo1-f43.google.com ([209.85.161.43])
+	by mail1.us.scanscope.net v10.0.0.0;	 Wed, 12 Mar 2025 20:17:23 +00:00
+Received: by mail-oo1-f43.google.com with SMTP id 006d021491bc7-5f89aa7a101so73756eaf.2
+        for <raulblancas@secureitmx.com>; Wed, 12 Mar 2025 13:17:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741810642; x=1742415442; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=pOx7KlBGBk5kMvIClys9d0K7359YX0m4pB560MJPADc=;
+        b=boPAludBYpF8nTTDjmvv6SPt/ayb42oA3sYXwwPk452HsD7gDe6+JK/2PvQ/C7cN5H
+         h3lwsECjg6VVF5UBRXp7JluVozTFUafUoM79B/bHRRSsoCCLMpN5PiFKqkOHGLMfX7Xw
+         zW3AoHnNh+vrhitTiKCX0FlJItUa/40vAV95RSq65M9i1EcmsfbjdtQr+2v3VzibJYgB
+         bIYnQYtDV72rzu+v/LB2inJc+VaS1eDyl7WKPJdO8gcoGA2phFv1/ZPUUpLfCbpYh2TD
+         xC2krIsBZaLDgL1bLH+D/Dr/0C2hb7kTK+jz9DPVcHeNFO5pYemOD+E3z3iThxkQNml8
+         aJ9w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741810642; x=1742415442;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=pOx7KlBGBk5kMvIClys9d0K7359YX0m4pB560MJPADc=;
+        b=Na9gq2bN032t/qdkw4T4fJGr23WGM5RuILNoR/l+eO/Mfw+dITGTDWN1FtY9JNRznf
+         n2SJgrzedKEzGJ+pNKUqfGGVpvbOBQHJgjpwtkWpRPkrY4juBHn2j0ptn8uvtmP//Y+w
+         W9ael+RwVFLZCKt4Db1h9Gm5DGSePMGpWnSNCNP+m5++XlXXx9BWny4WErimeEQqnP2j
+         dl0bpU7zFXktLM1F8+FKzlS77RbCErU8Bf1IGz6lAq7H2rO/8OE3/SFva+dnYbUnB1Hv
+         9DF54JkwNeSotWauPOsiacA66lh2h+P3kGy+WXLQHsJ73maflrmBf+JUuZeq0r4AaRUq
+         gsBA==
+X-Gm-Message-State: AOJu0Yw0C0xT2r+YpF4UBsDt0ESSqEb2UiQabtemDDNxHPzlFXuJ6xtz
+	WNlzJXsLOXWwY4SIwSQtAS03DI3yQxtN+y7pGZ2ZSxbe9IXJo0/WqiSf9MWYyt5NrdHbt0UbVh1
+	0byYR1LZPYT+/A3HLxxCeQ2F/qWiGmg==
+X-Gm-Gg: ASbGnculIDBsykcvA7IhltUmERyEarqj/qDQZbZGoiwQaxM3JG/M5X1gcuuHoUDGY0S
+	KcKjFukLWNCTDVHD8vhP6irRE7dV3is3nLJ8E7MjxbBnG/bdmjSpJeZ2IXFAfxwE8tBSHBbBrYL
+	t6tEqdFxt975Ue/9Mm4hyo10JDp/Vq
+X-Google-Smtp-Source: AGHT+IFbThBSeDnin1B19oW19A5vtvqh4UvP9XHTJzVz5j2O+WxvBnukMsjOkp+04e28IJPyAo0aA6bNkqzvxZ/vsS8=
+X-Received: by 2002:a05:6820:1e18:b0:601:a6ec:881c with SMTP id
+ 006d021491bc7-601a6ec8894mr7189028eaf.1.1741810642513; Wed, 12 Mar 2025
+ 13:17:22 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo Blancas Rico <rblancasrico@gmail.com>
+Date: Wed, 12 Mar 2025 14:17:13 -0600
+X-Gm-Features: AQ5f1Jq7cAS-5UKT_BhMTRhJsfeJRu3zU-L_fFLngrv49DmoZ0ZezQeL4IcKtTM
+Message-ID: <CANf=5GEjfr6Y3d50BLLc_P-Maw-wLcNhP37FZTDh22ESPg6tEw@mail.gmail.com>
+Subject: Homofobia
+To: <raulblancas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="0000000000009cf96506302ae482"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000006,0.002178)], BW: [Enabled, t: (0.000020)], RTDA:
+ [Enabled, t: (0.061747), Hit: No, Details: v2.87.0; Id:
+ 20.76hxr.1im602e00.12nls; mgx: 10_a8527dde8e0463fbb16bd959530ca0a8], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002116.67D1EBD7.0003
+X-OriginalArrivalTime: 12 Mar 2025 20:17:23.6935 (UTC)
+X-Spam-Status: No, score=2.6
+X-Spam-Score: 26
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Soy muy homofóbico Soy muy homofóbico 
+ Content analysis details:   (2.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [209.85.161.43 listed in zen.spamhaus.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.161.43 listed in bl.score.senderscore.com]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [rblancasrico(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.161.43 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.161.43 listed in sa-trusted.bondedsender.org]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--0000000000009cf96506302ae482
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Soy muy homof=C3=B3bico
+
+--0000000000009cf96506302ae482
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Soy muy homof=C3=B3bico=C2=A0</div>
+
+--0000000000009cf96506302ae482--
+

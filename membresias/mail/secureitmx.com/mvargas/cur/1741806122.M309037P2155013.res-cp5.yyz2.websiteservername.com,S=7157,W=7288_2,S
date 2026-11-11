@@ -1,0 +1,131 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: mvargas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id QII/Eira0WcF4iAA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <mvargas@secureitmx.com>; Wed, 12 Mar 2025 15:02:02 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: mvargas@secureitmx.com
+Delivery-date: Wed, 12 Mar 2025 15:02:02 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:5832 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1tsRL3-000000094f6-09ls
+	for mvargas@secureitmx.com;
+	Wed, 12 Mar 2025 15:02:02 -0400
+Authentication-Results: CNUSMTA1-5.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f172.google.com ([209.85.128.172])
+	by mail1.us.scanscope.net v10.0.0.0;	 Wed, 12 Mar 2025 19:01:11 +00:00
+Received: by mail-yw1-f172.google.com with SMTP id 00721157ae682-6ff27ad48beso1526067b3.0
+        for <mvargas@secureitmx.com>; Wed, 12 Mar 2025 12:01:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741806070; x=1742410870; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=1LIYjo7tur5H8iI8Z+V1KGFZn3zbfmnlA0FB9kyGCJQ=;
+        b=X0u0CfUL1ikFR5YoxXU3M5reXb/AJSX0Cw9foXU7vTHQkxa9lcPul31YFev/GLY+NA
+         34QXbCTfv0Ms7CfkXv9IYvgY3M53XL2uz4OIWyGKL/bIE6/kP3AFGdsnhPFI29FTgfK7
+         rx0SHFAMCCoKyvEbrQF9vsfFNTrL+lL8Zqs/txrhFHUDWiPz7QF4byeRlEZVxvfSIT3c
+         LxyznQYriFLNLhiSjifEraVlR7ikCH8IY9CDX4g5WqDVaKVFPKyhm63E1v6hZBXvQ6yW
+         ++6uBHUQBMENnPTA0RWReGEU/QTw0Uc+nsZTVAMeaaosteoDVRfwKsTquM1JHK1tIJTm
+         2sUA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741806070; x=1742410870;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=1LIYjo7tur5H8iI8Z+V1KGFZn3zbfmnlA0FB9kyGCJQ=;
+        b=NjtlGjN6m1A3Ec4Z8ntz6es0CkqQ6kyuqm6ltdqoeeEcDkVAmV50ZRZHsw6lbmR+QO
+         k0gojoEJ9eCQh/KZKfVVky5xcOdIrBFuQ4xBo8NwzP8+RIFeuh6REZSLk5JMcWItv7iT
+         0uNaYh4I17VD6gi9RP35sXoAbyHj3ct5C2b+yrUcomzxTmTEd5g0SMar/Y+iclGKl56d
+         X2GPiU4+Luj9Z39Gko+lwHzqnx26aCWWdEKiy2T0Bd1fafUHDrmqLVjxdaErxWshEVGp
+         kgrNxXWsaGQTVF7w6PvM7crEoLQMTp8OBnj+9TBJjVRfxOnE7wPuIHkeAEonSoLolPNL
+         opWw==
+X-Gm-Message-State: AOJu0YwdfTisM0Y+RG4F/84hLM0p+Jaq8AssuPofYOe6qUeCBKnwypEX
+	RvCGBm3cN8+WUpK8nooxdJN5GWa4ZULZ6RM/VeAKNCHYrGn0kDtLd3fyNR+u3fmdFYIIVBdEZsz
+	27duK73bUksjJza9s2xmEnG4W13vyXg==
+X-Gm-Gg: ASbGncv5lDzRKrMhb9E6ID1J/qEqUaBTvbofLldbiP8jz3+9B0dVvhoxNiyz/RinTwq
+	rCj1wa48jou1B7akwtVgboYthnzaNmBfRzlaKmcxUK6R2ociokRXrTU+L0Je7P1Nb0X2oQ2upsq
+	9VJ0V+u2oc+432aZH5dkg/AWXADdcZ
+X-Google-Smtp-Source: AGHT+IH+W8R+eGwTLnnpZtYJEK2MJmDq3BDCUW4rneoD2eeL/0mng7bVx42wSY+V8hZDf1o0FQXQXUVYDv3LP24iJq0=
+X-Received: by 2002:a05:690c:48c2:b0:6fd:47a7:3fb2 with SMTP id
+ 00721157ae682-6febf39bfecmr317149317b3.24.1741806070098; Wed, 12 Mar 2025
+ 12:01:10 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Wed, 12 Mar 2025 13:01:00 -0600
+X-Gm-Features: AQ5f1Jr1Ui0SOUyFlglzJ39zjxAJbcn7sYpbNPXj3XBL5ZtnDGhZ_qLj3qkCs4M
+Message-ID: <CAFGc8j-SMdy=66EpDMZi=JfMdeSpFgQtfcY71sf+O0VpgaYD5w@mail.gmail.com>
+Subject: Negros
+To: <mvargas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="0000000000001374bd063029d436"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000007,0.002588)], BW: [Enabled, t: (0.000015)], RTDA:
+ [Enabled, t: (0.104665), Hit: No, Details: v2.87.0; Id:
+ 20.gtplv.1im5rmt9d.4n30; mgx: 10_a8527dde8e0463fbb16bd959530ca0a8], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002110.67D1D9F9.0032
+X-OriginalArrivalTime: 12 Mar 2025 19:01:11.4896 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Los negros deben ser quemados Los negros deben ser quemados
+    
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.128.172 listed in bl.score.senderscore.com]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.172 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.172 listed in sa-trusted.bondedsender.org]
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--0000000000001374bd063029d436
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Los negros deben ser quemados
+
+--0000000000001374bd063029d436
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Los negros deben ser quemados=C2=A0</div>
+
+--0000000000001374bd063029d436--
+

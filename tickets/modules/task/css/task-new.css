@@ -1,0 +1,72 @@
+/* Nueva tarea — separación descripción / botón */
+.task-new-form .card-body {
+  padding-bottom: 0;
+}
+
+.task-new-form .task-new-form-grid {
+  gap: 1.15rem;
+  padding-bottom: 0.25rem;
+}
+
+.task-new-form .task-description-block {
+  margin-top: 1.5rem;
+  padding: 1.5rem 0 1.75rem;
+  border-top: 1px solid var(--gray-200, #e5e7eb);
+}
+
+.task-new-form .task-new-description-quill .form-label {
+  margin-bottom: 0.65rem;
+  font-weight: 600;
+  color: var(--gray-700, #374151);
+}
+
+.task-new-form .task-new-description-quill .task-quill-editor,
+.task-new-form .task-new-description-quill .ql-container.ql-snow {
+  min-height: 200px;
+  background: #fff;
+}
+
+.task-new-form .task-new-description-quill .ql-toolbar.ql-snow {
+  padding: 0.5rem 0.65rem;
+  background: #fff;
+}
+
+.task-new-form .task-new-description-quill .ql-editor {
+  color: var(--gray-800, #1f2937);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  min-height: 160px;
+}
+
+.task-new-form .task-new-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.35rem 1.5rem;
+  margin-top: 0;
+  border-top: 1px solid var(--gray-200, #e5e7eb);
+  background: var(--gray-50, #f9fafb);
+}
+
+.task-new-form .task-new-submit-btn {
+  min-width: 12rem;
+  padding: 0.55rem 1.35rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.task-new-form .task-new-submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(32, 38, 84, 0.18);
+}
+
+@media (max-width: 575.98px) {
+  .task-new-form .task-new-form-footer {
+    padding: 1.15rem 1rem;
+  }
+
+  .task-new-form .task-new-submit-btn {
+    width: 100%;
+  }
+}

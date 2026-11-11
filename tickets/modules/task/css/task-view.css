@@ -1,0 +1,219 @@
+/* Vista de tarea — lectura */
+.task-view-page {
+  --task-accent: var(--primary-800, #202654);
+  --task-accent-light: var(--primary-50, #f0f2f7);
+  --task-radius: 12px;
+  --task-radius-sm: 8px;
+}
+
+.task-view-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.15rem 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .task-view-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+.task-view-meta .span-full {
+  grid-column: 1 / -1;
+}
+
+.task-view-meta .meta-triple {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .task-view-meta .meta-triple-wrap {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.15rem 1.5rem;
+  }
+}
+
+.task-view-field-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-500, #6b7280);
+  margin-bottom: 0.35rem;
+}
+
+.task-view-field-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gray-800, #1f2937);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.task-view-field-value.muted-empty {
+  color: var(--gray-400, #9ca3af);
+  font-weight: 400;
+}
+
+.task-view-desc-box {
+  padding: 1rem 1.15rem;
+  background: var(--gray-50, #f9fafb);
+  border: 1px solid var(--gray-200, #e5e7eb);
+  border-radius: var(--task-radius-sm);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--gray-700, #374151);
+}
+
+.task-view-audit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding-top: 1rem;
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--gray-200, #e5e7eb);
+  font-size: 0.8rem;
+  color: var(--gray-500, #6b7280);
+}
+
+.task-view-audit span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.task-view-audit i {
+  opacity: 0.75;
+}
+
+.task-subtask-card .subtask-status-readonly {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.task-subtask-card .subtask-status-readonly .status-caption {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-500, #6b7280);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.task-view-subtask-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.85rem 1.15rem;
+  background: var(--gray-50, #f9fafb);
+  border-top: 1px solid var(--gray-100, #f3f4f6);
+}
+
+.task-time-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--gray-200, #e5e7eb);
+  color: var(--gray-700, #374151);
+}
+
+.task-time-chip i {
+  font-size: 0.7rem;
+}
+
+.task-time-chip.chip-open i {
+  color: #2563eb;
+}
+
+.task-time-chip.chip-wait i {
+  color: #d97706;
+}
+
+.task-view-feedback-readonly {
+  padding: 1rem 1.15rem;
+  border-top: 1px solid var(--gray-100, #f3f4f6);
+}
+
+.task-view-empty {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  color: var(--gray-500, #6b7280);
+}
+
+.task-view-empty i {
+  font-size: 2rem;
+  opacity: 0.35;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.task-waiting-history {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-waiting-history li {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--gray-100, #f3f4f6);
+}
+
+.task-waiting-history li:last-child {
+  border-bottom: none;
+}
+
+.task-waiting-history .wh-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-800, #1f2937);
+  margin-bottom: 0.25rem;
+}
+
+.task-waiting-history .wh-meta {
+  font-size: 0.78rem;
+  color: var(--gray-500, #6b7280);
+  margin-bottom: 0.35rem;
+}
+
+.task-waiting-history .wh-reason {
+  font-size: 0.85rem;
+  color: var(--gray-700, #374151);
+  padding: 0.65rem 0.85rem;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--task-radius-sm);
+  line-height: 1.45;
+}
+
+.task-waiting-history .wh-active {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #b45309;
+  background: #fef3c7;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  margin-left: 0.35rem;
+}
+
+.task-view-hero .task-edit-hero-waiting-wrap {
+  margin-top: 0.85rem;
+  max-width: 42rem;
+}
+
+.task-view-subject {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--gray-900, #111827);
+  margin: 0;
+  line-height: 1.4;
+}

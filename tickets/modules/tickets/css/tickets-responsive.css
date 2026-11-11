@@ -1,0 +1,953 @@
+/**
+ * Responsive del módulo Tickets
+ * Breakpoints:
+ * - Mobile: 320px - 768px
+ * - Tablet: 769px - 1024px
+ * - Desktop: 1025px - 1440px
+ * - Large: 1441px+
+ */
+
+:root {
+    --tickets-page-gap: 1rem;
+    --tickets-radius: 1rem;
+    --tickets-border: #e5e7eb;
+    --tickets-muted: #6b7280;
+    --tickets-ink: #1f2937;
+}
+
+.body-bg {
+    overflow-x: hidden;
+}
+
+.main-content-boxed {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tickets-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tickets-page-header h1,
+.tickets-page-header .h2 {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    margin-bottom: 0.35rem;
+}
+
+.tickets-page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: stretch;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+
+.tickets-page-actions .btn {
+    white-space: nowrap;
+    flex: 0 1 auto;
+}
+
+.table-container {
+    overflow: hidden;
+}
+
+.tickets-list-table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.tickets-list-table th,
+.tickets-list-table td {
+    vertical-align: middle;
+}
+
+.tickets-list-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: flex-start;
+}
+
+.tickets-list-actions .btn {
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickets-info-grid .table th {
+    width: 42%;
+    color: var(--tickets-muted);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tickets-info-grid .table td {
+    word-break: break-word;
+}
+
+.tickets-info-grid .table.table-borderless th,
+.tickets-info-grid .table.table-borderless td {
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+
+.ticket-detail-card .card-header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.reply-card .ql-toolbar {
+    flex-wrap: wrap;
+}
+
+.reply-attachments-actions {
+    width: 100%;
+}
+
+/* =========================
+   LARGE SCREENS (1441px+)
+   ========================= */
+@media (min-width: 1441px) {
+    .main-content.main-content-boxed {
+        max-width: 1280px;
+        padding: 2.5rem 2rem;
+    }
+
+    .tickets-page-actions .btn {
+        min-height: 2.5rem;
+    }
+}
+
+/* =========================
+   DESKTOP (1025px - 1440px)
+   ========================= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main-content.main-content-boxed {
+        max-width: 1120px;
+        padding: 2rem 1.5rem;
+    }
+
+    .tickets-col-lg-only {
+        display: none !important;
+    }
+}
+
+/* =========================
+   TABLET (769px - 1024px)
+   ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-content.main-content-boxed {
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1.25rem 1rem !important;
+        border-radius: 1rem;
+    }
+
+    .tickets-page-header {
+        align-items: stretch;
+    }
+
+    .tickets-page-actions {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .tickets-page-actions .btn {
+        flex: 1 1 calc(50% - 0.6rem);
+        min-width: 180px;
+        justify-content: center;
+    }
+
+    .tickets-col-desktop-only {
+        display: none !important;
+    }
+
+    .tickets-list-table th,
+    .tickets-list-table td {
+        padding: 0.65rem 0.5rem;
+        font-size: 0.92rem;
+    }
+
+    .tickets-info-grid > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* En móvil, columnas ocultas en tabla vuelven a mostrarse en tarjetas */
+@media (max-width: 768px) {
+    .tickets-list-table .tickets-col-desktop-only,
+    .tickets-list-table .tickets-col-optional,
+    .tickets-list-table .tickets-col-lg-only {
+        display: flex !important;
+    }
+}
+
+/* =========================
+   MOBILE (320px - 768px)
+   ========================= */
+@media (max-width: 768px) {
+    .main-content.main-content-boxed {
+        max-width: 100% !important;
+        margin-top: 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0.85rem 0.75rem !important;
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 12px rgba(32, 38, 84, 0.06);
+    }
+
+    .tickets-page-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .tickets-page-header h1,
+    .tickets-page-header .h2 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    .tickets-page-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .tickets-page-actions .btn {
+        width: 100%;
+        justify-content: center;
+        white-space: normal;
+        text-align: center;
+        padding: 0.7rem 0.9rem;
+        line-height: 1.25;
+    }
+
+    .table-container {
+        padding: 0.35rem !important;
+        border-radius: 0.75rem;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .tickets-table-status {
+        text-align: left;
+        padding: 0.25rem 0.15rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    /* Tabla → tarjetas en móvil */
+    .tickets-list-table,
+    .tickets-list-table tbody,
+    .tickets-list-table tr,
+    .tickets-list-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .tickets-list-table thead {
+        display: none;
+    }
+
+    .tickets-list-table tbody tr {
+        background: #fff;
+        border: 1px solid var(--tickets-border);
+        border-radius: 0.85rem;
+        box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+        margin-bottom: 0.85rem;
+        padding: 0.85rem;
+    }
+
+    .tickets-list-table tbody td {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.75rem;
+        border: 0 !important;
+        padding: 0.4rem 0 !important;
+        font-size: 0.9rem;
+    }
+
+    .tickets-list-table tbody td::before {
+        content: attr(data-label);
+        flex: 0 0 38%;
+        max-width: 38%;
+        color: var(--tickets-muted);
+        font-weight: 600;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        line-height: 1.4;
+    }
+
+    .tickets-list-table tbody td > * {
+        flex: 1 1 auto;
+        min-width: 0;
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    .tickets-list-table tbody td[data-label="Acciones"] {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        border-top: 1px solid #eef2f7 !important;
+        margin-top: 0.35rem;
+        padding-top: 0.75rem !important;
+    }
+
+    .tickets-list-table tbody td[data-label="Acciones"]::before {
+        max-width: none;
+        flex: none;
+        margin-bottom: 0.15rem;
+    }
+
+    .tickets-list-table tbody td[data-label="Acciones"] > * {
+        text-align: left;
+        justify-content: stretch;
+        width: 100%;
+    }
+
+    .tickets-list-actions {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.45rem;
+        width: 100%;
+    }
+
+    .tickets-list-actions .btn {
+        width: 100%;
+        min-height: 2.5rem;
+    }
+
+    .tickets-list-table .avatar {
+        display: none;
+    }
+
+    .tickets-info-grid > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tickets-info-grid .table,
+    .tickets-info-grid .table tbody,
+    .tickets-info-grid .table tr,
+    .tickets-info-grid .table th,
+    .tickets-info-grid .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .tickets-info-grid .table tr {
+        margin-bottom: 0.65rem;
+        padding-bottom: 0.65rem;
+        border-bottom: 1px solid #eef2f7;
+    }
+
+    .tickets-info-grid .table th {
+        width: 100%;
+        padding-bottom: 0.15rem;
+        white-space: normal;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+    }
+
+    .tickets-info-grid .table td {
+        padding-top: 0;
+        font-size: 0.95rem;
+        color: var(--tickets-ink);
+    }
+
+    .ticket-messages {
+        padding: 0.75rem !important;
+        margin: 0.5rem 0 !important;
+    }
+
+    .ticket-messages .message {
+        padding: 0.9rem !important;
+        border-radius: 0.85rem !important;
+    }
+
+    .ticket-messages .message-header {
+        flex-wrap: wrap;
+        gap: 0.65rem;
+    }
+
+    .ticket-messages .message-badges {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ticket-messages .message-replies {
+        margin-left: 0.35rem !important;
+        padding-left: 0.65rem !important;
+    }
+
+    .ticket-messages .attachment-list .row > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .reply-card .ql-toolbar .ql-formats {
+        margin-right: 0.35rem;
+    }
+
+    .reply-attachments-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reply-attachments-actions .btn {
+        width: 100%;
+    }
+
+    .reply-attachment-chip {
+        max-width: 100%;
+    }
+
+    .reply-attachment-chip-name {
+        max-width: 140px;
+    }
+
+    .ticket-channel-switch-wrap {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ticket-channel-switch {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 12px;
+    }
+
+    .ticket-channel-switch-btn {
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+        padding: 0.65rem 0.5rem;
+        border-radius: 10px;
+    }
+
+    .card-header.d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .form-actions,
+    .reply-card .d-flex.justify-content-between {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .form-actions .btn,
+    .reply-card .d-flex.justify-content-between .btn {
+        width: 100%;
+    }
+
+    /* Evitar scroll horizontal accidental */
+    .container-fluid,
+    .row,
+    .card,
+    .table-responsive {
+        max-width: 100%;
+    }
+
+    .table-responsive {
+        overflow-x: visible;
+    }
+}
+
+/* =========================
+   MOBILE PEQUEÑO (<=480px)
+   ========================= */
+@media (max-width: 480px) {
+    .main-content.main-content-boxed {
+        padding: 0.7rem 0.55rem !important;
+        border-radius: 0.5rem;
+    }
+
+    .tickets-page-header h1,
+    .tickets-page-header .h2 {
+        font-size: 1.2rem;
+    }
+
+    .tickets-list-table tbody td::before {
+        flex-basis: 34%;
+        max-width: 34%;
+        font-size: 0.72rem;
+    }
+
+    .tickets-list-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket-chat-composer-row {
+        flex-wrap: wrap;
+    }
+
+    .ticket-chat-composer-row .form-control {
+        width: 100%;
+        order: 1;
+    }
+
+    .ticket-chat-composer-row .btn,
+    .ticket-chat-composer-row .btn-attach {
+        flex: 1 1 auto;
+    }
+}
+
+/* =========================
+   DETALLE DE TICKET — OVERVIEW
+   ========================= */
+.ticket-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ticket-overview-card,
+.ticket-person-card {
+    background: #fff;
+    border: 1px solid #e8ecf2;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+}
+
+.ticket-overview-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.15rem 1.25rem;
+    border-bottom: 1px solid #edf1f6;
+    background: linear-gradient(180deg, #fbfcfe 0%, #fff 100%);
+}
+
+.ticket-overview-kicker {
+    margin: 0 0 0.2rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #7b8798;
+}
+
+.ticket-overview-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #202654;
+}
+
+.ticket-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.ticket-status-pill--danger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.ticket-status-pill--warning {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.ticket-status-pill--primary,
+.ticket-status-pill--info {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.ticket-status-pill--success {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.ticket-status-pill--secondary {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+.ticket-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem 1rem;
+    padding: 1.15rem 1.25rem 1.25rem;
+}
+
+.ticket-meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    min-width: 0;
+    padding: 0.85rem 0.9rem;
+    border: 1px solid #eef2f7;
+    border-radius: 0.85rem;
+    background: #fafbfd;
+}
+
+.ticket-meta-icon {
+    width: 2.15rem;
+    height: 2.15rem;
+    border-radius: 0.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    color: #202654;
+    flex-shrink: 0;
+}
+
+.ticket-meta-label {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: #7b8798;
+    margin-bottom: 0.2rem;
+}
+
+.ticket-meta-value {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+    word-break: break-word;
+    line-height: 1.35;
+}
+
+.ticket-people-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.ticket-person-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 1.1rem 1.2rem;
+    border-bottom: 1px solid #edf1f6;
+    background: linear-gradient(180deg, #fbfcfe 0%, #fff 100%);
+}
+
+.ticket-person-avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.ticket-person-avatar--requester {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.ticket-person-avatar--technician {
+    background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+}
+
+.ticket-person-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #7b8798;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.ticket-person-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #202654;
+    word-break: break-word;
+}
+
+.ticket-person-body {
+    padding: 0.85rem 1.15rem 1.15rem;
+}
+
+.ticket-person-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.ticket-person-row:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ticket-person-label {
+    flex: 0 0 auto;
+    font-size: 0.84rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.ticket-person-value {
+    flex: 1 1 auto;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    word-break: break-word;
+}
+
+.ticket-person-value a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.ticket-person-value a:hover {
+    text-decoration: underline;
+}
+
+.ticket-empty-tech {
+    text-align: center;
+    padding: 1.35rem 0.75rem 0.5rem;
+    color: #6b7280;
+}
+
+.ticket-empty-tech i {
+    display: block;
+    font-size: 1.6rem;
+    color: #94a3b8;
+    margin-bottom: 0.55rem;
+}
+
+.ticket-empty-tech p {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 1025px) {
+    .ticket-meta-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ticket-meta-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .ticket-overview-header,
+    .ticket-person-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ticket-status-pill {
+        align-self: flex-start;
+    }
+
+    .ticket-meta-grid,
+    .ticket-people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket-person-row {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .ticket-person-value {
+        text-align: left;
+    }
+}
+
+/* =========================
+   COSTOS DEL TICKET
+   ========================= */
+.ticket-costs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.ticket-costs-wrap {
+    width: 100%;
+    overflow: visible;
+}
+
+.ticket-costs-table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.ticket-costs-table thead th {
+    white-space: nowrap;
+}
+
+.ticket-costs-table .cost-amount-cell {
+    color: #15803d;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.ticket-costs-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .ticket-costs-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ticket-costs-add-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 2.5rem;
+    }
+
+    .ticket-costs-table,
+    .ticket-costs-table tbody,
+    .ticket-costs-table tr,
+    .ticket-costs-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .ticket-costs-table thead {
+        display: none;
+    }
+
+    .ticket-costs-table tbody tr {
+        background: #fff;
+        border: 1px solid #e6ebf2;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+        margin-bottom: 0.85rem;
+        padding: 0.85rem;
+    }
+
+    .ticket-costs-table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .ticket-costs-table tbody td {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.75rem;
+        border: 0 !important;
+        padding: 0.45rem 0 !important;
+        font-size: 0.92rem;
+    }
+
+    .ticket-costs-table tbody td::before {
+        content: attr(data-label);
+        flex: 0 0 38%;
+        max-width: 38%;
+        color: #64748b;
+        font-weight: 700;
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        line-height: 1.4;
+        padding-top: 0.15rem;
+    }
+
+    .ticket-costs-table tbody td > * {
+        flex: 1 1 auto;
+        min-width: 0;
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    .ticket-costs-table tbody td.cost-amount-cell {
+        font-size: 1.05rem;
+    }
+
+    .ticket-costs-table tbody td[data-label="Acciones"] {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        border-top: 1px solid #eef2f7 !important;
+        margin-top: 0.35rem;
+        padding-top: 0.75rem !important;
+    }
+
+    .ticket-costs-table tbody td[data-label="Acciones"]::before {
+        max-width: none;
+        flex: none;
+        margin-bottom: 0.1rem;
+    }
+
+    .ticket-costs-table tbody td[data-label="Acciones"] > * {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .ticket-costs-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    .ticket-costs-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-content-boxed .form-actions.d-flex {
+        flex-direction: column;
+    }
+
+    .main-content-boxed .form-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ticket-costs-table th,
+    .ticket-costs-table td {
+        font-size: 0.9rem;
+        padding: 0.65rem 0.5rem;
+    }
+
+    .ticket-costs-action-label {
+        display: none;
+    }
+}
+

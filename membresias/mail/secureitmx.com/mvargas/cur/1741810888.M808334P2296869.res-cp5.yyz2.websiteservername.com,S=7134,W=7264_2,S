@@ -1,0 +1,130 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: mvargas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id aAK7L8js0WclDCMA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <mvargas@secureitmx.com>; Wed, 12 Mar 2025 16:21:28 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: mvargas@secureitmx.com
+Delivery-date: Wed, 12 Mar 2025 16:21:28 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:4425 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1tsSZv-00000009g08-2KV6
+	for mvargas@secureitmx.com;
+	Wed, 12 Mar 2025 16:21:28 -0400
+Authentication-Results: CNUSOUT1-2.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f181.google.com ([209.85.128.181])
+	by mail1.us.scanscope.net v10.0.0.0;	 Wed, 12 Mar 2025 20:20:31 +00:00
+Received: by mail-yw1-f181.google.com with SMTP id 00721157ae682-6feaa0319d8so1738157b3.2
+        for <mvargas@secureitmx.com>; Wed, 12 Mar 2025 13:20:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741810830; x=1742415630; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=LAEq3jCELH2fJNtFg/7NnDtfE6YOb1LNhjnvY6FwSV4=;
+        b=Rwz3y7hhpWlGova8Ka2mAU5sIjAVh2NQEE8E39lSlHuVGMICrmWduDm+EpiVEmBH6I
+         EFdnDqiccdqmgapUzz7ATncjxD9bZpzX17WExoYaKA/38sejPnHO99xsdBO8Y/8NSGAp
+         IMvRb2plDVRXWe+pLVYIKAeVdPoKXf+XMdlaKz6dXCxS/Iv51Qd32/SoSpT8YKEuUIvn
+         1pbf1Ya7ZtqqfnxPmsiOWa9i6lxqQ2P0DwGh67kyPPUdhuDjXYDWIoEOiE6JOXREkpnP
+         qa3L6Kq+zZr+P8Rh9GXmnRP3YNnkf/HtqfHXsy3X44mJGhQ0WAP6nNpnGguE6yOC6/2W
+         AnNA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741810830; x=1742415630;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=LAEq3jCELH2fJNtFg/7NnDtfE6YOb1LNhjnvY6FwSV4=;
+        b=MjoJt9EYdjtwWD4mGXTDBLkRRKC/efcywWQ48WDTZt2ooNDahlxOHylMKBxhNtZ6Oc
+         9082QZAEp02e3NNjRNH5ABWM6OE2KaEfF53n34ZGdvg34W95bKKGyicRTLIKLyIjvaxq
+         I5ZlhjtyJUJ8KMhjjW5zIKiK00d9418pn+b4eOQqxszXHjxljEWdJfc8vmddCkEQZR/n
+         c1f86gjcgq1J1yfgjvg6DjWP7DDIqVdrGx0XHDs41qvvRO4xoPGbUZjNFsvB27bWizQ/
+         JPSCEC4wOz/qIjA+8ipFPamzsuR0VF5Z+zODQ216BPt5GeQhtRcSlAR+L575ShO56wpn
+         ehkw==
+X-Gm-Message-State: AOJu0Yw4qK6fdXjEKJSIlwdZaZr1BLMajNuljIeM/c4SPeX3aV1NfgfP
+	ax7GrsCZy6WY0tFL5j0udsAF72uORfWwvau3FKgAe8lEQd/yBHm2P9xP4l+oF4VtjL2ZsGqAVBu
+	/ObrQzW1WIcuniiuVJTZJQsvHCYuVhg==
+X-Gm-Gg: ASbGncvOgMmJlnIx3w1IsEFVbEDNuCEiTS+WN15i8v2Hd1KIwYv2MyT8Bhk+yNHLNFU
+	5v6b7kYv9SWQ3tr0oAuBODbMFS7XJVQV4fnV1ehCwB+mkY82wPIvRNb6icP83QueX2jkzNg5vps
+	sZxmRRYfW23ooQ5EK63G+U9x4rrT2V
+X-Google-Smtp-Source: AGHT+IFarJ+c0rhDrkvInIHYX/yKG9L2kmphDNrDOLHLerwusriMN1iWaAfHJceHeJKuHDRi0Ny0WvuTjxwLoIvn3J0=
+X-Received: by 2002:a05:690c:6081:b0:6fd:5a3b:7af9 with SMTP id
+ 00721157ae682-6febf30748emr331187577b3.20.1741810830455; Wed, 12 Mar 2025
+ 13:20:30 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Wed, 12 Mar 2025 14:20:21 -0600
+X-Gm-Features: AQ5f1JolH_jG4M2ufCTgh0m49YZhWaz5L3_Pg-gi4Rts2W9JogvdeFOajkUNC6c
+Message-ID: <CAFGc8j-7Nvij+9u-x2K6jjxAz+fNpN_XNzKF6mXSe=xP_D019g@mail.gmail.com>
+Subject: Homosexuales
+To: <mvargas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="000000000000d0bf2a06302aef5b"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000005,0.001899)], BW: [Enabled, t: (0.000021)], RTDA:
+ [Enabled, t: (0.071074), Hit: No, Details: v2.87.0; Id:
+ 20.nzdpj.1im608bqm.7da; mgx: 10_a8527dde8e0463fbb16bd959530ca0a8], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002114.67D1EC9B.0056
+X-OriginalArrivalTime: 12 Mar 2025 20:20:31.7056 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Odio a los homosexuales Odio a los homosexuales 
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.181 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.128.181 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.181 listed in sa-trusted.bondedsender.org]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--000000000000d0bf2a06302aef5b
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Odio a los homosexuales
+
+--000000000000d0bf2a06302aef5b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Odio a los homosexuales=C2=A0</div>
+
+--000000000000d0bf2a06302aef5b--
+

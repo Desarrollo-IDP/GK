@@ -1,0 +1,5 @@
+empresa,nombre del equipo,responsable,sistema operativo,direccion mac,tipo,fabricante,modelo,numero de serie,ram,disco duro,procesador,observaciones,ubicación ,activo del equipo
+Empresa ABC,PC-CONTABILIDAD-01,Juan P¨¦rez,Windows 10 Pro,00:1A:2B:3C:4D:5E,Desktop,Dell,OptiPlex 7080,ABC123456789,16GB,512GB SSD,Intel Core i7-10700,Equipo de contabilidad principal,Piso 2,De la empresa 
+Empresa ABC,PC-001,Juan Pérez,Windows 10,00:1A:2B:3C:4D:5F,Desktop,Dell,Optiplex 7050,SN12345678,16GB,500GB SSD,Intel i7-7700,Equipo de desarrollo,Piso 1,De la empresa 
+Empresa ABC,LT-002,María López,Windows 11,AA:BB:CC:DD:EE:FF,Laptop,HP,EliteBook 840,HP87654321,8GB,256GB SSD,Intel i5-1135G7,Equipo de ventas,Piso 2,De la empresa 
+Empresa ABC,SRV-003,Carlos Gómez,Windows Server 2019,11:22:33:44:55:66,Servidor,Lenovo,ThinkSystem SR650,LN98765432,64GB,2TB RAID,Intel Xeon Silver 4210,Servidor de aplicaciones,Piso 1,De la empresa 

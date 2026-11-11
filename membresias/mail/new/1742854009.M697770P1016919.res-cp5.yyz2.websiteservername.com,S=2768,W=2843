@@ -1,0 +1,75 @@
+Return-Path: <>
+Delivered-To: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id +KJzKHnX4WdXhA8A87FxYg
+	(envelope-from <>)
+	for <secureitmxcom@res-cp5.yyz2.websiteservername.com>; Mon, 24 Mar 2025 18:06:49 -0400
+Return-path: <>
+Envelope-to: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Delivery-date: Mon, 24 Mar 2025 18:06:49 -0400
+Received: from mailnull by res-cp5.yyz2.websiteservername.com with local (Exim 4.98.1)
+	id 1twpwX-00000004SQl-2VGt
+	for secureitmxcom@res-cp5.yyz2.websiteservername.com;
+	Mon, 24 Mar 2025 18:06:49 -0400
+X-Failed-Recipients: mx@res-cp5.yyz2.websiteservername.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@res-cp5.yyz2.websiteservername.com>
+To: secureitmxcom@res-cp5.yyz2.websiteservername.com
+References: <E1twpwP-00000004SIn-32go@res-cp5.yyz2.websiteservername.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1742854009-eximdsn-687201345
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1twpwX-00000004SQl-2VGt@res-cp5.yyz2.websiteservername.com>
+Date: Mon, 24 Mar 2025 18:06:49 -0400
+
+--1742854009-eximdsn-687201345
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  mx@res-cp5.yyz2.websiteservername.com
+    Unrouteable address
+
+--1742854009-eximdsn-687201345
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; res-cp5.yyz2.websiteservername.com
+
+Action: failed
+Final-Recipient: rfc822;mx@res-cp5.yyz2.websiteservername.com
+Status: 5.0.0
+
+--1742854009-eximdsn-687201345
+Content-type: message/rfc822
+
+Return-path: <secureitmxcom@res-cp5.yyz2.websiteservername.com>
+Received: from secureitmxcom by res-cp5.yyz2.websiteservername.com with local (Exim 4.98.1)
+	(envelope-from <secureitmxcom@res-cp5.yyz2.websiteservername.com>)
+	id 1twpwP-00000004SIn-32go;
+	Mon, 24 Mar 2025 18:06:47 -0400
+To: 21302039@utfv.edu,mx@res-cp5.yyz2.websiteservername.com
+Subject: Recuperación de código de autenticación - SecuriTI
+From: noreply@securiti.com
+Reply-To: noreply@securiti.com
+X-Mailer: PHP/8.2.27
+Message-Id: <E1twpwP-00000004SIn-32go@res-cp5.yyz2.websiteservername.com>
+Date: Mon, 24 Mar 2025 18:06:41 -0400
+
+Hola oscar,
+
+Has solicitado recuperar tu código de autenticación para SecuriTI.
+
+Tu código secreto es: I27D7FGSFKR56TYO
+
+Por favor, configura este código en tu aplicación Google Authenticator.
+
+Este correo es automático, por favor no respondas.
+
+Saludos,
+Equipo de SecuriTI
+
+--1742854009-eximdsn-687201345--

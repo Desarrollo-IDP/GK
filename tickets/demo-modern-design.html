@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Sistema Moderno Ticket GK</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Sistema de diseño moderno -->
+    <link rel="stylesheet" href="css/modern-design-system.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <style>
+        .demo-section {
+            margin-bottom: 4rem;
+        }
+        
+        .demo-title {
+            color: var(--primary-700);
+            border-bottom: 2px solid var(--primary-200);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .component-showcase {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header de demostración -->
+    <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt"></i>
+                <span>Ticket GK - Demo Moderno</span>
+            </a>
+        </div>
+        
+        <div class="search-container">
+            <input class="search-input form-control" type="text" placeholder="Buscar en la demostración...">
+        </div>
+        
+        <div class="navbar-nav d-flex flex-row align-items-center">
+            <div class="nav-item dropdown me-3">
+                <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Notificaciones</h6></li>
+                    <li><a class="dropdown-item" href="#">Nuevo ticket asignado</a></li>
+                    <li><a class="dropdown-item" href="#">Ticket cerrado #1234</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                    <div class="avatar me-2">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <span class="d-none d-md-inline">Usuario Demo</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Mi cuenta</h6></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Perfil</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Configuración</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar de demostración -->
+            <nav class="sidebar">
+                <div class="sidebar-nav">
+                    <div class="nav-section">
+                        <div class="nav-section-title">Demo</div>
+                        <div class="nav-item">
+                            <a class="nav-link active" href="#colores">
+                                <i class="fas fa-palette"></i>
+                                <span>Paleta de Colores</span>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#componentes">
+                                <i class="fas fa-cubes"></i>
+                                <span>Componentes</span>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#tipografia">
+                                <i class="fas fa-font"></i>
+                                <span>Tipografía</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Contenido principal -->
+            <main class="main-content">
+                <div class="d-flex justify-content-between align-items-center mb-6">
+                    <div>
+                        <h1 class="h2 mb-2">Sistema de Diseño Moderno</h1>
+                        <p class="text-muted mb-0">Demostración del nuevo diseño para Ticket GK</p>
+                    </div>
+                </div>
+
+                <!-- Sección de Colores -->
+                <section id="colores" class="demo-section">
+                    <h2 class="demo-title">🎨 Paleta de Colores</h2>
+                    
+                    <div class="component-showcase">
+                        <h4>Colores Principales</h4>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--primary-800); color: white;">
+                                    <strong>Primary-800</strong><br>
+                                    #202654
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--primary-600); color: white;">
+                                    <strong>Primary-600</strong><br>
+                                    #4b63a5
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--primary-400); color: white;">
+                                    <strong>Primary-400</strong><br>
+                                    #8797c3
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--primary-100); color: var(--primary-800);">
+                                    <strong>Primary-100</strong><br>
+                                    #e1e5f0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Grises Neutros</h4>
+                        <div class="row">
+                            <div class="col-md-2 mb-3">
+                                <div class="p-4 rounded" style="background: var(--gray-900); color: white;">
+                                    <strong>Gray-900</strong><br>
+                                    #111827
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="p-4 rounded" style="background: var(--gray-700); color: white;">
+                                    <strong>Gray-700</strong><br>
+                                    #374151
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="p-4 rounded" style="background: var(--gray-500); color: white;">
+                                    <strong>Gray-500</strong><br>
+                                    #6b7280
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="p-4 rounded" style="background: var(--gray-300); color: var(--gray-700);">
+                                    <strong>Gray-300</strong><br>
+                                    #d1d5db
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="p-4 rounded" style="background: var(--gray-100); color: var(--gray-700);">
+                                    <strong>Gray-100</strong><br>
+                                    #f3f4f6
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="p-4 rounded" style="background: var(--gray-50); color: var(--gray-700);">
+                                    <strong>Gray-50</strong><br>
+                                    #f9fafb
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Estados y Feedback</h4>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--success-500); color: white;">
+                                    <strong>Success</strong><br>
+                                    #22c55e
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--warning-500); color: white;">
+                                    <strong>Warning</strong><br>
+                                    #f59e0b
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--error-500); color: white;">
+                                    <strong>Error</strong><br>
+                                    #ef4444
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="p-4 rounded" style="background: var(--info-500); color: white;">
+                                    <strong>Info</strong><br>
+                                    #3b82f6
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Componentes -->
+                <section id="componentes" class="demo-section">
+                    <h2 class="demo-title">🧱 Componentes</h2>
+                    
+                    <div class="component-showcase">
+                        <h4>Botones</h4>
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus me-2"></i>Botón Primario
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-edit me-2"></i>Botón Secundario
+                            </button>
+                            <button class="btn btn-success">
+                                <i class="fas fa-check me-2"></i>Botón Éxito
+                            </button>
+                            <button class="btn btn-warning">
+                                <i class="fas fa-exclamation me-2"></i>Botón Advertencia
+                            </button>
+                            <button class="btn btn-danger">
+                                <i class="fas fa-trash me-2"></i>Botón Peligro
+                            </button>
+                        </div>
+                        
+                        <div class="d-flex flex-wrap gap-3">
+                            <button class="btn btn-outline btn-sm">Pequeño</button>
+                            <button class="btn btn-outline">Normal</button>
+                            <button class="btn btn-outline btn-lg">Grande</button>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Tarjetas</h4>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">Tarjeta Básica</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Esta es una tarjeta básica con contenido de ejemplo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="text-sm text-muted mb-1">Tickets Activos</div>
+                                                <div class="h3 font-bold text-primary">24</div>
+                                            </div>
+                                            <div class="bg-primary bg-opacity-10 p-3 rounded">
+                                                <i class="fas fa-ticket-alt fa-2x text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="text-sm text-muted mb-1">Sin Asignar</div>
+                                                <div class="h3 font-bold text-warning">8</div>
+                                            </div>
+                                            <div class="bg-warning bg-opacity-10 p-3 rounded">
+                                                <i class="fas fa-user-clock fa-2x text-warning"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Badges y Estados</h4>
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <span class="badge badge-primary">
+                                <i class="fas fa-check-circle me-1"></i>Activo
+                            </span>
+                            <span class="badge badge-success">
+                                <i class="fas fa-check me-1"></i>Completado
+                            </span>
+                            <span class="badge badge-warning">
+                                <i class="fas fa-clock me-1"></i>En Proceso
+                            </span>
+                            <span class="badge badge-danger">
+                                <i class="fas fa-exclamation-triangle me-1"></i>Crítico
+                            </span>
+                            <span class="badge badge-secondary">
+                                <i class="fas fa-pause me-1"></i>Pausado
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Formularios</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Campo de Texto</label>
+                                    <input type="text" class="form-control" placeholder="Escribe algo aquí...">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Select</label>
+                                    <select class="form-select">
+                                        <option>Selecciona una opción</option>
+                                        <option>Opción 1</option>
+                                        <option>Opción 2</option>
+                                        <option>Opción 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Alertas</h4>
+                        <div class="mb-3">
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Operación completada exitosamente
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                Advertencia: Revisa los datos ingresados
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="alert alert-danger">
+                                <i class="fas fa-times-circle me-2"></i>
+                                Error: No se pudo completar la operación
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Información: El sistema se actualizará en 5 minutos
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Avatares</h4>
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <div class="avatar avatar-sm">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar avatar-lg">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar avatar-xl">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar avatar-primary">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar avatar-success">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Progress Bars</h4>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Progreso Normal</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Progreso Éxito</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Progreso Advertencia</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Tipografía -->
+                <section id="tipografia" class="demo-section">
+                    <h2 class="demo-title">📝 Tipografía</h2>
+                    
+                    <div class="component-showcase">
+                        <h4>Jerarquía de Títulos</h4>
+                        <div class="mb-4">
+                            <h1>H1 - Título Principal (2rem)</h1>
+                            <h2>H2 - Título Secundario (1.75rem)</h2>
+                            <h3>H3 - Título Terciario (1.5rem)</h3>
+                            <h4>H4 - Título Cuaternario (1.25rem)</h4>
+                            <h5>H5 - Título Quinario (1.125rem)</h5>
+                            <h6>H6 - Título Senario (1rem)</h6>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Pesos de Fuente</h4>
+                        <div class="mb-4">
+                            <p class="fw-light">Texto Light (300) - Lorem ipsum dolor sit amet</p>
+                            <p class="fw-normal">Texto Normal (400) - Lorem ipsum dolor sit amet</p>
+                            <p class="fw-medium">Texto Medium (500) - Lorem ipsum dolor sit amet</p>
+                            <p class="fw-semibold">Texto Semibold (600) - Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">Texto Bold (700) - Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Tamaños de Texto</h4>
+                        <div class="mb-4">
+                            <p class="text-xs">Texto Extra Small (0.75rem)</p>
+                            <p class="text-sm">Texto Small (0.875rem)</p>
+                            <p>Texto Normal (0.875rem)</p>
+                            <p class="text-lg">Texto Large (1.125rem)</p>
+                            <p class="text-xl">Texto Extra Large (1.25rem)</p>
+                        </div>
+                    </div>
+
+                    <div class="component-showcase">
+                        <h4>Colores de Texto</h4>
+                        <div class="mb-4">
+                            <p class="text-muted">Texto Muted - Lorem ipsum dolor sit amet</p>
+                            <p class="text-primary">Texto Primary - Lorem ipsum dolor sit amet</p>
+                            <p class="text-success">Texto Success - Lorem ipsum dolor sit amet</p>
+                            <p class="text-warning">Texto Warning - Lorem ipsum dolor sit amet</p>
+                            <p class="text-danger">Texto Danger - Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="mt-6 pt-4 border-top">
+                    <div class="text-center text-muted">
+                        <p>&copy; 2024 Ticket GK - Sistema de Diseño Moderno</p>
+                        <p class="small">Desarrollado con ❤️ para una mejor experiencia de usuario</p>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Actualizar navegación activa
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html> 

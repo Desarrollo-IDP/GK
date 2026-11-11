@@ -1,0 +1,56 @@
+.task-quill-editor {
+  min-height: 160px;
+  background: #fff;
+  border: 1px solid var(--gray-300, #ced4da);
+  border-radius: var(--task-radius-sm, 8px);
+  font-size: 0.95rem;
+}
+
+.task-quill-field .ql-toolbar.ql-snow {
+  border: 1px solid var(--gray-300, #ced4da);
+  border-bottom: none;
+  border-radius: var(--task-radius-sm, 8px) var(--task-radius-sm, 8px) 0 0;
+  background: var(--gray-50, #f9fafb);
+}
+
+.task-quill-field .ql-container.ql-snow {
+  border: 1px solid var(--gray-300, #ced4da);
+  border-radius: 0 0 var(--task-radius-sm, 8px) var(--task-radius-sm, 8px);
+  min-height: 140px;
+}
+
+.task-rich-content {
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.task-rich-content p:last-child {
+  margin-bottom: 0;
+}
+
+.task-rich-content ul,
+.task-rich-content ol {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.task-rich-content h1 {
+  font-size: 1.35rem;
+}
+
+.task-rich-content h2 {
+  font-size: 1.15rem;
+}
+
+.task-rich-content h3 {
+  font-size: 1rem;
+}
+
+.task-rich-content a {
+  color: var(--primary-700, #2d3a8c);
+}
+
+.task-quill-field--compact .task-quill-editor,
+.task-quill-field--compact .ql-container.ql-snow {
+  min-height: 100px;
+}

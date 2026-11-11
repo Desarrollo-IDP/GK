@@ -1,0 +1,133 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: mvargas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id SLM8CRlo0Ge/njEA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <mvargas@secureitmx.com>; Tue, 11 Mar 2025 12:43:05 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: mvargas@secureitmx.com
+Delivery-date: Tue, 11 Mar 2025 12:43:05 -0400
+Received: from mail1.us.scanscope.net ([104.214.75.142]:3339 helo=mail3.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1ts2h1-0000000Ddfh-3H3b
+	for mvargas@secureitmx.com;
+	Tue, 11 Mar 2025 12:43:05 -0400
+Authentication-Results: CNUSMTA3-3.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f181.google.com ([209.85.128.181])
+	by mail3.us.scanscope.net v10.0.0.0;	 Tue, 11 Mar 2025 16:42:15 +00:00
+Received: by mail-yw1-f181.google.com with SMTP id 00721157ae682-6fed0620395so30914317b3.3
+        for <mvargas@secureitmx.com>; Tue, 11 Mar 2025 09:42:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741711334; x=1742316134; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=DxzktiKOTSp6wdf03E2iv9Yk8Xna9utmkyWqeuG1r+c=;
+        b=jX1JFua34iuIzkzzSUqyXZJFsJ2KVpMYubCqptseZrGCfBChSXUVrEhw50urNVcsPI
+         xJrTRrww9NNUeOTf8N4l99nmC43X0YXUzVJ/RH1fHdR9uBwzwrmB02mZzOE5TBsh6Drm
+         FCkjdOm//KBqQXC4j84dKOBWWgG9szFk4V/Lsyd48ZTGDr1/I/iJK2+paMvofDMXkIPd
+         dq36jY9pAsNqvQ3x4gYTVWo002YWuS2OXnIV+ibwwbixBa9mPM31UTEAJHRlwWLdOELz
+         xiDbGxptkZTO8GAt60K+9CKHb5XUb57DN654l14j4EtVAFktuhqDysnKPXCuldnZYV7g
+         S8yQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741711334; x=1742316134;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=DxzktiKOTSp6wdf03E2iv9Yk8Xna9utmkyWqeuG1r+c=;
+        b=CYb9cH3bV4lnqp5gtVuym5cBrrZLr5AmFEhgYre4dar6fJ37yC8aXebBFWQ+2EqmqE
+         +mUNkzwqFmyYW//T9nl7HIpjN+HFmhhJnA8nEY8luK1SqG6+AaGczyQsBkmpE3GPG8MJ
+         HMQmoRCrFXcLsQ4eZTNBl7ficzYAsUPYiy8HuP7Rtv/of5HdF1+52iKAQPnlOl6f8SeM
+         ICpsBD//LyGatq5l33Jh7a0ezAZFl5dnieAbEfqUmT1UP1lHH2lY2teLXFTsKWyAsUtq
+         xmIyXlc7cAVhM4j9PckFiz8owhtjkw0Di7Vnk7a9VIxA/cia2dvGvyhKnfDy7+rTk3Qo
+         M2OA==
+X-Gm-Message-State: AOJu0YwTP/y5b/bU2Gpvf7UlU7+x6DEJbft9PmShgKnrbXigwUWasDK3
+	BH5Sj3Fj2Pt+/7U3FhLcpTXB5JGm/201LX0O6damYU42XiM1SszKY7w/OCx6VaKHLTxfKZ8LVYZ
+	TVhErPrmTRpTK+KcNt7tNKbCqj/Yo3A==
+X-Gm-Gg: ASbGncstbOA0WN94da9P0cADcKib0bGSY+CXUpzBQICn49yO1AgD8bn9HbLmqMq4hR9
+	YcdBPZYc3BqKpgNJOxAAZj+JqTjSZ0ssKrgEq8et8bx3gNg+tMmwFzgaLQxAoypqZ8eIdZVuMSY
+	k+fGtMxnpq5Jmzuu5aJsE43YxTnEE=
+X-Google-Smtp-Source: AGHT+IE13RcoaPgg0M/Om2wVHDbE9pgOn9MxVpprSargkk1rzJvZfbmF0VE5gsasTRJdHu/LMCWJATmwyrOBrkWdYDo=
+X-Received: by 2002:a05:690c:4807:b0:6f7:55a2:4cf5 with SMTP id
+ 00721157ae682-6febf29f712mr257970837b3.2.1741711334427; Tue, 11 Mar 2025
+ 09:42:14 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Tue, 11 Mar 2025 10:42:04 -0600
+X-Gm-Features: AQ5f1JqfUU3aSK2QZutJRVsd7Y74DDNSh0iMo7pjtgQwAXH8lyF8mpg9E3i-6RE
+Message-ID: <CAFGc8j8Q1Macykh-YsRGWdhF0V99s_TPKZzmh5d970h9KrfRMg@mail.gmail.com>
+Subject: Homosexuales no deben existir
+To: <mvargas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="00000000000063d926063013c525"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000007,0.003179)], BW: [Enabled, t: (0.000021)], RTDA:
+ [Enabled, t: (0.066900), Hit: No, Details: v2.87.0; Id:
+ 20.4rrsw.1im31bpe9.90sf; mgx: 10_5cf0b845f51922aa7a965573cf18825f], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002106.67D067D0.0048
+X-TLSLevel: Try
+X-OriginalArrivalTime: 11 Mar 2025 16:42:15.6166 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Los homosexuales no deben existir ni tener derechos Los homosexuales
+    no deben existir ni tener derechos 
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.128.181 listed in bl.score.senderscore.com]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.181 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.181 listed in sa-trusted.bondedsender.org]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--00000000000063d926063013c525
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Los homosexuales no deben existir ni tener derechos
+
+--00000000000063d926063013c525
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Los homosexuales no deben existir ni tener derechos</div>
+
+--00000000000063d926063013c525--
+

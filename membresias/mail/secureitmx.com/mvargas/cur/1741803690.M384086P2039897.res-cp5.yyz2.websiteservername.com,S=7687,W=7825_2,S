@@ -1,0 +1,138 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: mvargas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id IJSaFarQ0WdZIB8A87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <mvargas@secureitmx.com>; Wed, 12 Mar 2025 14:21:30 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: mvargas@secureitmx.com
+Delivery-date: Wed, 12 Mar 2025 14:21:30 -0400
+Received: from mail1.us.scanscope.net ([104.214.75.142]:3911 helo=mail3.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1tsQho-00000008jyS-47kL
+	for mvargas@secureitmx.com;
+	Wed, 12 Mar 2025 14:21:30 -0400
+Authentication-Results: CNUSMTA3-3.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f177.google.com ([209.85.128.177])
+	by mail3.us.scanscope.net v10.0.0.0;	 Wed, 12 Mar 2025 18:20:39 +00:00
+Received: by mail-yw1-f177.google.com with SMTP id 00721157ae682-6fee50bfea5so1227027b3.1
+        for <mvargas@secureitmx.com>; Wed, 12 Mar 2025 11:20:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741803638; x=1742408438; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=IJU914H1Crr7WbMLFIyE+aT+Czq0LXnJXiVsnjHKPmo=;
+        b=U1u55MryCBWWc8w0I0IYs4g8sZ+q7TPxuwvtguj7heXPQMv0NYRLjPJR6ta5uIRQf2
+         3Q5DJ1gc6kLbN2Ko6emw52QglwFWI0XOKJQ4BgDK8W60k12fSdbp8nQ/q8bty4d5LcPj
+         8wYFHeiZAH1xIhCSVs847dE7MMe7kHxSw7JAAcISfOsh1GRostzSrSPSl4u8pRpoR6ZA
+         y3okj/mkrHrGE+ADMyqpDRtuyZ2J5NF0baTH+zejf6V0oxyvNHTiJnlK4hBdFemnCf2P
+         q1L/dmKkliBRwKhWDndzB/50ItQIgAePKgB75URKInCViatf2vziACMrQU1GSsTpmpOz
+         RpHg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741803638; x=1742408438;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=IJU914H1Crr7WbMLFIyE+aT+Czq0LXnJXiVsnjHKPmo=;
+        b=j+ICMcLAztNBVr9xZV4BaWn/JuuSjxzG1n1A0WxgVuPsDm+ebREY5spynJSHVOYhSW
+         kvK9ls8mqDLdVBCvjh/58QORq2zcNAxGDpItftoQpu5SKB/2ORII9HAQgnU026DHnIUF
+         DRJybDTUGPa5uYafShiONHmwxieIVbCNyK99oqU60zvtcnTuAGgES/H8auCLHBiQ+vOg
+         1cS07w0zGnmD8kPzlmaUqeynAIadEB4k5o4mNkoJrC/vqbwMUvnj2UVZVd3syo7gncl2
+         ni5evHZ6A0j5UyL6pFMGFH51afNAwJV7xGitsGslLgLFhduZdiAEuoFFY+yrQSJSm2k8
+         y/sA==
+X-Gm-Message-State: AOJu0YxdpWvjt1exwOWtXEinYZCGCqz5ex2kIkFEkHUPW51wfs6tov9j
+	AQvoP3QszFGL8vYRxQfbRmPT0eJ2yCuIqw8/5Aze+0jdM37PNaY26PPjdvflyMsYD3RUZ/79jLU
+	MvdqP+h7S3+ASxhQnqcTpSBXsmCEipw==
+X-Gm-Gg: ASbGncvtn5syootiGSTRGr+U5Rh6LcQlb2eyi65gyOQ3cAxUo9ScskMlR+mjmj7D8bf
+	w+uP1+Cl6Mb9CdGFguz6DMcCkoHdBZUQtHcW7HGwT6SjBGfKsRvaGAgTRQ+kAEQvowh5EoUKgMy
+	NLuth/toygp18Ns72fTSZXxaxkVf/L9DTEWr6orYA=
+X-Google-Smtp-Source: AGHT+IEDAMmsJwlqVChFI45keo5YgFc1yhgQZsjCd1o6Iby0xxb9VF5qfOzoDZLX7i93wsmfGSr07tVcyc83uIetWrY=
+X-Received: by 2002:a05:690c:3386:b0:6fb:b2de:a2bd with SMTP id
+ 00721157ae682-6febf2f214cmr333428597b3.16.1741803638490; Wed, 12 Mar 2025
+ 11:20:38 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Wed, 12 Mar 2025 12:20:29 -0600
+X-Gm-Features: AQ5f1Jrc2sLpk5EYHX1V5UIc1d4T1RUPLZc7iR7w84XPIsISgc7eVwEL5GMwp9c
+Message-ID: <CAFGc8j_F9ahzzmkuEzPRBgCbus7fzYWdTFQyxZKj_mZz5CF4Vw@mail.gmail.com>
+Subject: Homofobia
+To: <mvargas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="000000000000241b0b0630294352"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000009,0.003061)], BW: [Enabled, t: (0.000023)], RTDA:
+ [Enabled, t: (0.066892), Hit: No, Details: v2.87.0; Id:
+ 20.4qfpd.1im5pcm3g.d8q; mgx: 10_f4ef767b20694d913aba91c8fdfe36f5], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A00211C.67D1D079.0045
+X-OriginalArrivalTime: 12 Mar 2025 18:20:39.5081 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Yo quiero quemar a los homofóbicos Te enviaré contenido
+   sexual explícito Yo quiero quemar a los homofóbicos Te enviaré contenido
+    sexual explícito 
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [209.85.128.177 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.128.177 listed in bl.score.senderscore.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.177 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.177 listed in sa-trusted.bondedsender.org]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--000000000000241b0b0630294352
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Yo quiero quemar a los homof=C3=B3bicos
+Te enviar=C3=A9 contenido sexual expl=C3=ADcito
+
+--000000000000241b0b0630294352
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Yo quiero quemar a los homof=C3=B3bicos=C2=A0<div dir=3D"=
+auto">Te enviar=C3=A9 contenido sexual expl=C3=ADcito=C2=A0</div></div>
+
+--000000000000241b0b0630294352--
+

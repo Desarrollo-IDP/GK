@@ -1,0 +1,409 @@
+/* Main styles */
+body {
+    font-size: .875rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #FFFFFF;
+    color: #1E2A3B;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/* Sidebar - Estilos base movidos a responsive-sidebar.css */
+.sidebar {
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #1E2A3B;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* Estilos de links del sidebar movidos a responsive-sidebar.css */
+
+/* Cards */
+.card {
+    background-color: #D1D5DB;
+    border: 1px solid #D1D5DB;
+    color: #1E2A3B;
+}
+
+.card-header {
+    background-color: #414D5C;
+    color: #000000;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+/* Tables */
+.table {
+    color: #1E2A3B;
+}
+
+.table th {
+    background-color: #414D5C;
+    color: #000000;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #D1D5DB;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* Forms */
+.form-control {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    color: #1E2A3B;
+}
+
+.form-control:focus {
+    border-color: #414D5C;
+    box-shadow: 0 0 0 0.25rem rgba(65, 77, 92, 0.25);
+}
+
+/* Chat styles */
+.chat-container {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    padding: 1rem;
+    min-height: calc(100vh - 48px);
+    margin-top: 48px;
+}
+
+/* Media queries para chat movidas a responsive-sidebar.css */
+
+/* Message container styles */
+.message-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.message-body {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.requester-message .message-body {
+    background-color: #D1D5DB;
+    border-left: 4px solid #414D5C;
+    color: #1E2A3B;
+}
+
+.technician-message .message-body {
+    background-color: #FFFFFF;
+    border-left: 4px solid #1E2A3B;
+    color: #1E2A3B;
+}
+
+/* Buttons */
+.btn-outline-secondary {
+    color: #414D5C;
+    border-color: #414D5C;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #414D5C;
+    color: #FFFFFF;
+}
+
+/* Navbar */
+.navbar-brand {
+    background-color: #1E2A3B;
+    color: #FFFFFF;
+}
+
+.form-control-dark {
+    background-color: #414D5C;
+    border-color: #D1D5DB;
+    color: #FFFFFF;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* Cards */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* Tables */
+.table-responsive {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table th {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #222;
+    color: #f8f9fa;
+}
+
+.dark-mode .sidebar {
+    background-color: #333;
+    box-shadow: inset -1px 0 0 rgba(255, 255, 255, .1);
+}
+
+.dark-mode .sidebar .nav-link {
+    color: #f8f9fa;
+}
+
+.dark-mode .sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card {
+    background-color: #333;
+    border-color: #444;
+}
+
+.dark-mode .card-header {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom-color: #444;
+}
+
+.dark-mode .table {
+    color: #f8f9fa;
+}
+
+.dark-mode .table th {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .form-control {
+    background-color: #444;
+    border-color: #555;
+    color: #f8f9fa;
+}
+
+.dark-mode .form-control:focus {
+    background-color: #444;
+    border-color: #86b7fe;
+    color: #f8f9fa;
+}
+
+/* Responsive adjustments - Movidos a responsive-sidebar.css */
+
+/* Responsive styles for requester modules */
+@media (max-width: 767.98px) {
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+    
+    h1.h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .table-responsive th, 
+    .table-responsive td {
+        padding: 0.5rem;
+    }
+    
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn-toolbar {
+        justify-content: flex-start !important;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Responsive styles for technicians modules */
+@media (max-width: 767.98px) {
+    .technician-card {
+        margin-bottom: 1rem;
+    }
+    
+    .action-buttons .btn {
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .technician-info {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .technician-info .ms-auto {
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Add these styles to your existing CSS file */
+
+.chat-container {
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
+
+.message-container {
+    margin-bottom: 1rem;
+}
+
+.message-header {
+    margin-bottom: 0.25rem;
+}
+
+.requester-message .message-body {
+    background-color: #e9ecef;
+    border-left: 4px solid #6c757d;
+}
+
+.technician-message .message-body {
+    background-color: #d1e7dd;
+    border-left: 4px solid #198754;
+}
+
+.message-body {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+}

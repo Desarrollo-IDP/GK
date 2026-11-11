@@ -1,0 +1,120 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 60px 0 0 150px; 
+        }
+        navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E2A3B;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 60px; 
+        }
+        logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav-links {
+            list-style: none;
+            display: flex;
+        }
+        nav-links li {
+            display: inline;
+        }
+        nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        nav-links a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        user-menu {
+            position: relative;
+        }
+        user-menu img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: 150px;
+            top: 50px;
+            z-index: 1000;
+        }
+        dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+        sidebar {
+            width: 150px;
+            height: 100vh;
+            background: #1E2A3B;
+            color: white;
+            position: fixed;
+            top: 60px; 
+            left: 0;
+            z-index: 999;
+        }
+        sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        sidebar ul li {
+            padding: 10px;
+        }
+        sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        sidebar ul li a i {
+            margin-right: 10px;
+        }
+        content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        btn-open-modal {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        btn-open-modal:hover {
+            background-color: #333;
+        }

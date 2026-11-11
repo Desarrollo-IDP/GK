@@ -1,0 +1,130 @@
+Return-Path: <rblancasrico@gmail.com>
+Delivered-To: raulblancas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id 2LbbDdnS0Wf04x8A87FxYg
+	(envelope-from <rblancasrico@gmail.com>)
+	for <raulblancas@secureitmx.com>; Wed, 12 Mar 2025 14:30:49 -0400
+Return-path: <rblancasrico@gmail.com>
+Envelope-to: raulblancas@secureitmx.com
+Delivery-date: Wed, 12 Mar 2025 14:30:49 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:4254 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <rblancasrico@gmail.com>)
+	id 1tsQqp-00000008ohA-2j0h
+	for raulblancas@secureitmx.com;
+	Wed, 12 Mar 2025 14:30:49 -0400
+Authentication-Results: CNUSOUT1-2.us.scanscope.net; spf=pass
+ smtp.mailfrom=rblancasrico@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-oi1-f173.google.com ([209.85.167.173])
+	by mail1.us.scanscope.net v10.0.0.0;	 Wed, 12 Mar 2025 18:29:58 +00:00
+Received: by mail-oi1-f173.google.com with SMTP id 5614622812f47-3f9832f798aso111764b6e.2
+        for <raulblancas@secureitmx.com>; Wed, 12 Mar 2025 11:29:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741804197; x=1742408997; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=F7SGaz0+G7TFb5EIeBqnQrIq+3ENQXx6lZtpskAI2II=;
+        b=VFU2Ac6ojGJdrTfZCpdc+Q51Rm7odO0WA0nsW+494GD2aB5I6mIIzoKLfkJC9+miYf
+         fRALWQYb7RVvDRiLtc82t/YokURkqdUSGnrD4TLTYCpARjxPqJmTTmUCdDk41JS5X/CZ
+         gelC8kmEWtsjBQgOni2qqA1ctbL/xpoKU9fEAHbFq3B7i8E8QP3GULiaHzO0MFDH1Mky
+         TTVU1dteYFp0gXF6WOiT55+Av8qobjGcRCu4Yuf35ZNz4Fbs578btBDjvE3viFRmu8CL
+         EkyEmSnhwWFNEDVDqs487qyXKeZoOQ4JKqzJd/vYYCK0mr8Hp5VOCl/lwKm8DAYg+dER
+         T/hg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741804197; x=1742408997;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=F7SGaz0+G7TFb5EIeBqnQrIq+3ENQXx6lZtpskAI2II=;
+        b=tuRuXA35q8B/bZO0geRAZRwrrx6m0WX49OjcBHjD4DULOQG0EBJZIvvwjjr+d5VROt
+         UFXVqoVS1Q0Hzos2xfJSk1VZ+BNNvy9y+2kz8pLHMempaM6a2ZGNdpQj/tJbgflHUm5w
+         X5Ww5vMMsdvJLqsw9vaOYHdeUdjJTCaINIkIvGCrYtF0wb4nkndi2JsvU+gJlbkQg7v0
+         I0x5j8jPCrV5Qf3lVT88xzX4oc54jaD3Dq6GpgRNLdNGL+6AuYlHZOC8tf3lL1q/zKEv
+         3H2UpIrHHXJOidovwuAXCOck4thTbJorJq27owywajcoHgZ8pW9O6SgJX8IShwkGkulJ
+         XNrg==
+X-Gm-Message-State: AOJu0YyEP7NnPxh6uTwRus/CLdopxzYxo9H38cHtG6wSsdjfd6OYeC1l
+	fvhUO1lUJ3qwP2OEMkaRUmHp3xGIq9Hwt81TtCz52/9laBo7JY2+cPn50oE/2w+vMa84maRMgko
+	wQR6SsA2tlU5wdZtCpckGLJiDIh1wew==
+X-Gm-Gg: ASbGnctEIalfVlj4V2AeXJVDxydpwESNwCAJWv2DzgUnJkfaOKP6kSZZegxQ11UlOqt
+	V57q4DEln0fo2gXKk7/T35OEcP1Il7IG9SO5mfgj5T8/1P7m0Ru3I7zHMpLYzyHGKuzRz8Z/Qz7
+	ZJ8jdpm59YXh6e52mkshfto2uSDMRu7x2ECeq3f9E=
+X-Google-Smtp-Source: AGHT+IFYOtxW0i/i9Rrti2CVu2Y46J5UcP+OYcRSJQT09BtbCwoCTkiQWhwrDRT8eQ4kA2OWM6/9aa3DaJ7hwKqqmLI=
+X-Received: by 2002:a05:6808:2288:b0:3f6:aad5:eac8 with SMTP id
+ 5614622812f47-3fa2a75592bmr4646626b6e.6.1741804197109; Wed, 12 Mar 2025
+ 11:29:57 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo Blancas Rico <rblancasrico@gmail.com>
+Date: Wed, 12 Mar 2025 12:29:47 -0600
+X-Gm-Features: AQ5f1JoTu0er5142eOce4TWt0Zibxt7KE_VNZELLvFJKuTgI47tZz6A8m4iKmo0
+Message-ID: <CANf=5GERLcmz=DEr09-Yt5vRyQBaAoHWHi2vTxOf8v+5TCt0mA@mail.gmail.com>
+Subject: Homosexuales
+To: <raulblancas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="0000000000006fe9f6063029644f"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000005,0.001977)], BW: [Enabled, t: (0.000019)], RTDA:
+ [Enabled, t: (0.072901), Hit: No, Details: v2.87.0; Id:
+ 20.bsmdr.1im5ptnbo.1ifst; mgx: 10_a8527dde8e0463fbb16bd959530ca0a8], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002117.67D1D29E.006F
+X-OriginalArrivalTime: 12 Mar 2025 18:29:58.2975 (UTC)
+X-Spam-Status: No, score=2.6
+X-Spam-Score: 26
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Los homosexuales son cáncer Los homosexuales son cáncer 
+ Content analysis details:   (2.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.167.173 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.167.173 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [209.85.167.173 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.167.173 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [rblancasrico(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--0000000000006fe9f6063029644f
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Los homosexuales son c=C3=A1ncer
+
+--0000000000006fe9f6063029644f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Los homosexuales son c=C3=A1ncer=C2=A0</div>
+
+--0000000000006fe9f6063029644f--
+

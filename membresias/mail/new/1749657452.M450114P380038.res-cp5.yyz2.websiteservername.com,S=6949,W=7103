@@ -1,0 +1,154 @@
+Return-Path: <>
+Delivered-To: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id uM0UGmynSWiGzAUA87FxYg
+	(envelope-from <>)
+	for <secureitmxcom@res-cp5.yyz2.websiteservername.com>; Wed, 11 Jun 2025 11:57:32 -0400
+Return-path: <>
+Envelope-to: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Delivery-date: Wed, 11 Jun 2025 11:57:32 -0400
+Received: from bird.aspen.relay.mailchannels.net ([23.83.221.17]:36269)
+	by res-cp5.yyz2.websiteservername.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	id 1uPNpU-00000001i7v-0Xlr
+	for secureitmxcom@res-cp5.yyz2.websiteservername.com;
+	Wed, 11 Jun 2025 11:57:32 -0400
+Received: by relay.mailchannels.net (Postfix)
+	id 44F2A183A39; Wed, 11 Jun 2025 15:56:50 +0000 (UTC)
+Date: Wed, 11 Jun 2025 15:56:50 +0000 (UTC)
+From: MAILER-DAEMON@mailchannels.net (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="2627B18381C.1749657410/relay.mailchannels.net"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20250611155650.44F2A183A39@relay.mailchannels.net>
+X-Spam-Status: No, score=
+X-Spam-Score: 
+X-Spam-Bar: 
+X-Ham-Report: 
+X-Spam-Flag: NO
+
+This is a MIME-encapsulated message.
+
+--2627B18381C.1749657410/relay.mailchannels.net
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host relay.mailchannels.net.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<oa629642@gmail.com>: host gmail-smtp-in.l.google.com[172.253.117.26] said:
+    550-5.7.26 Your email has been blocked because the sender is
+    unauthenticated. 550-5.7.26 Gmail requires all senders to authenticate with
+    either SPF or DKIM. 550-5.7.26  550-5.7.26  Authentication results:
+    550-5.7.26  DKIM = did not pass 550-5.7.26  SPF
+    [res-cp5.yyz2.websiteservername.com] with ip: [23.83.213.48] = 550-5.7.26
+    did not pass 550-5.7.26  550-5.7.26  For instructions on setting up
+    authentication, go to 550 5.7.26
+    https://support.google.com/mail/answer/81126#authentication
+    d9443c01a7336-2360307dc36si154483745ad.109 - gsmtp (in reply to end of DATA
+    command)
+
+--2627B18381C.1749657410/relay.mailchannels.net
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; relay.mailchannels.net
+X-Postfix-Queue-ID: 2627B18381C
+X-Postfix-Sender: rfc822; secureitmxcom@res-cp5.yyz2.websiteservername.com
+Arrival-Date: Wed, 11 Jun 2025 15:56:49 +0000 (UTC)
+
+Final-Recipient: rfc822; oa629642@gmail.com
+Original-Recipient: rfc822;oa629642@gmail.com
+Action: failed
+Status: 5.7.26
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.7.26 Your email has been blocked because the
+    sender is unauthenticated. 550-5.7.26 Gmail requires all senders to
+    authenticate with either SPF or DKIM. 550-5.7.26  550-5.7.26
+    Authentication results: 550-5.7.26  DKIM = did not pass 550-5.7.26  SPF
+    [res-cp5.yyz2.websiteservername.com] with ip: [23.83.213.48] = 550-5.7.26
+    did not pass 550-5.7.26  550-5.7.26  For instructions on setting up
+    authentication, go to 550 5.7.26
+    https://support.google.com/mail/answer/81126#authentication
+    d9443c01a7336-2360307dc36si154483745ad.109 - gsmtp
+
+--2627B18381C.1749657410/relay.mailchannels.net
+Content-Description: Undelivered Message Headers
+Content-Type: text/rfc822-headers
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <secureitmxcom@res-cp5.yyz2.websiteservername.com>
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 2627B18381C
+	for <oa629642@gmail.com>; Wed, 11 Jun 2025 15:56:49 +0000 (UTC)
+Received: from res-cp5.yyz2.websiteservername.com (100-121-35-93.trex-nlb.outbound.svc.cluster.local [100.121.35.93])
+	(Authenticated sender: hostpapa)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 9401218381A
+	for <oa629642@gmail.com>; Wed, 11 Jun 2025 15:56:48 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1749657408; a=rsa-sha256;
+	cv=none;
+	b=Sj+U16URITe9qn63uhmZvrQNpw4NYjZoVf7XWV2TrpKDmBHjtOmEhZC/uS8CuCeLEP+ye7
+	Tgc5fOxckFothpKAeIrIYUalOL9x7FNiEqom9puVoX81BMllllwSSsD0/+nmnhU1IOBJg9
+	DJ9e02boz91HFTHwUfdIL2ZYb7mPOgA5Tt0poI1OAsgVF9vzsGhq+rHANcFmtohYKkcTt7
+	AF2BIFifbw0f4dCk23zySWqICunwAtN4CQ3i1Hstmz016WSA5muW0J08gvqHuYuLaaTHvS
+	VfoR40OG8rRKlYxj0h5l9QlOImXq+hzx6aGRMdgMcMMcnrR2QTfvLUNSe3GrgQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1749657408;
+	h=from:from:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=869NS0ZLDluddOnYtSXocU0xJ5fjdNnOy/tT7GUTKbI=;
+	b=R4YbYaV7MIwLamMfe1v8CVMBRObevJSNusQO639+JJnXQ6M7B0P99KH2oYi1/V9ulYwXDq
+	aLeMseyokOWqsFRpua3IIOG+AH1QMw6jGznCIfCAoZyaW7PnBc1JYEKrjcGt92qNcyz2jE
+	1IDI8wT/wpYOs8fDmuaBw2YzKMS/jvf7wmURmPhbhB3qdNI1ydj6OyecL6Qf61MA2q1DqY
+	OckPlJ4VXkX/Si5Z+0bLWUGm/H+d51rkwcY14/7lplCww+durQqlLiR3H3FyLP4bw+yELS
+	gof0WPw5n5ZnBaP6ubKkWfSidLLXt6klOjhDEkSnQGOHtTggXxKOAkLFQTbiQw==
+ARC-Authentication-Results: i=1;
+	rspamd-5674bcf875-24fnd;
+	auth=pass smtp.auth=hostpapa
+ smtp.mailfrom=secureitmxcom@res-cp5.yyz2.websiteservername.com
+X-Sender-Id:
+ hostpapa|x-authuser|secureitmxcom@res-cp5.yyz2.websiteservername.com
+X-MC-Relay: Bad
+X-MailChannels-SenderId:
+ hostpapa|x-authuser|secureitmxcom@res-cp5.yyz2.websiteservername.com
+X-MailChannels-Auth-Id: hostpapa
+X-Bottle-Illegal: 7d6986ea39f48e99_1749657409069_908226730
+X-MC-Loop-Signature: 1749657409069:1047753640
+X-MC-Ingress-Time: 1749657409068
+Received: from res-cp5.yyz2.websiteservername.com
+ (res-cp5.yyz2.websiteservername.com [66.102.128.56])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.121.35.93 (trex/7.0.3);
+	Wed, 11 Jun 2025 15:56:49 +0000
+Received: from secureitmxcom by res-cp5.yyz2.websiteservername.com with local (Exim 4.98.1)
+	(envelope-from <secureitmxcom@res-cp5.yyz2.websiteservername.com>)
+	id 1uPNog-00000001i3x-35hF
+	for oa629642@gmail.com;
+	Wed, 11 Jun 2025 11:56:47 -0400
+To: oa629642@gmail.com
+Subject: Re: [Ticket #954] Actualización de Ticket
+MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Oscar <oantonio@securiti.info>
+Reply-To: oantonio@securiti.info
+Message-Id: <E1uPNog-00000001i3x-35hF@res-cp5.yyz2.websiteservername.com>
+Date: Wed, 11 Jun 2025 11:56:42 -0400
+X-AuthUser: secureitmxcom@res-cp5.yyz2.websiteservername.com
+
+--2627B18381C.1749657410/relay.mailchannels.net--

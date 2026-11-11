@@ -1,0 +1,134 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: raulblancas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id gLZDMEV00GfRBTMA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <raulblancas@secureitmx.com>; Tue, 11 Mar 2025 13:35:01 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: raulblancas@secureitmx.com
+Delivery-date: Tue, 11 Mar 2025 13:35:01 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:6254 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1ts3VI-0000000EBKB-1XFo
+	for raulblancas@secureitmx.com;
+	Tue, 11 Mar 2025 13:35:01 -0400
+Authentication-Results: CNUSMTA3-6.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f174.google.com ([209.85.128.174])
+	by mail1.us.scanscope.net v10.0.0.0;	 Tue, 11 Mar 2025 17:34:11 +00:00
+Received: by mail-yw1-f174.google.com with SMTP id 00721157ae682-6f7031ea11cso59153717b3.2
+        for <raulblancas@secureitmx.com>; Tue, 11 Mar 2025 10:34:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741714450; x=1742319250; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=w5wdIXt5CZf/TQNBq4ZftBhDNBM+uT8ccD08lMH/fKk=;
+        b=ZD273ZaWq7sW13VPGHgUIPbP/U2j4SmjWHLd3niXEtd6L+XSIR5wCWVnlEPxSeLSNv
+         efVcjolwq+4Bm3kmVBo65P69sByrhUupWkaxR6rwHWwki4Y9Kah60Q3f4eLsFjkvsLyg
+         cMAmAjA1B4Re36EfyNFz1ednzJh4NRah+cp829Gl3bFtLb4k5r8+95pSye0KZetttcRn
+         AZCHOuICltGdFzXSnQs2fAkWT7UIi4rNcwU1t7O3nxN2eUNZZveH5ntU/jBHNRTdr/KK
+         6sBlozQbYEPM55pwWIOeRlwDCo1M+msvxpoM4D9UD+Ulgf0WGHW1hL6efWMQ8NB//W5X
+         SO6g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741714450; x=1742319250;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=w5wdIXt5CZf/TQNBq4ZftBhDNBM+uT8ccD08lMH/fKk=;
+        b=PQvymvrKEN1eXKIhfFSsaJmo4UDQl9035yULUCGvC6mnf9KRWuTb0LcjV1nSVoEM+u
+         X7dJ8Ip7rj87N+lRIuF4yjuWPyIT5tCsrCh1+KKLdWAy14iIZJcQgCF+NBGPauD6XWdy
+         j0scRqCVwrrhjQvMAgDJh34T0kevAlCZmQUIIKZveu5dD4wHej0OVLyR1tiefqMyzC0v
+         pzuBFhuo4/RmwJAUuaR3Bz430V7gye80mi/1Nx4TH1fifrl0g1l5eVhmEjM3wfLaFhp3
+         nsUpeBxzbq0SFtbDWF2Ye+n1MDW0Y7xGiTtC2PSy4H8WALl+SjjWWeujyOgVmdXLaFJJ
+         R+JA==
+X-Gm-Message-State: AOJu0YzECyRUhKGfrbyG/ydaB4w1u0FazRRi/95n3HzvgZdJmeYdo+/t
+	2NsTjgEzc54igF3dD4SmgqnORjTsHTdvHHvPIaPRmhz80Pc2NiJfjs++S+CD6C0iMZ5dZjrqA8A
+	IDdcFU5tEY7yCLdzCinetfTpR6LJwlQ==
+X-Gm-Gg: ASbGncsZbW4sRNo9/N21w8F0wgwSzqnZz70FnnS/mfI5VSZpyvLYGwqlJVP0wieV/3j
+	XWhwTi2E860MI4KNs8NHpG9Xi48AP//eGsljh4WouG8NhXtyPLrgyGBFElRu+HTp34bkrmYKyJw
+	pBcswcExVhnlShb429vudTmAi3MOU=
+X-Google-Smtp-Source: AGHT+IEi+yADJONkvd6vZVFBuZlUkhJJBqe7Vx+wDbQL2Ret6roy4Obua8CG6pk2N8tWMcEzbtByo3MSI6f42jmF9fA=
+X-Received: by 2002:a05:690c:4091:b0:6fe:c007:3b20 with SMTP id
+ 00721157ae682-6fec0073cedmr193194597b3.2.1741714450033; Tue, 11 Mar 2025
+ 10:34:10 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Tue, 11 Mar 2025 11:34:00 -0600
+X-Gm-Features: AQ5f1Jq5-2OTeUwVgh6VxG5JXXbcZMzteGo7xepyrpRThn8h8ZdsXEERuQVRMlw
+Message-ID: <CAFGc8j_quxZJy13o8gez_WWFPxQ+xNuVAygnX9oQkF+U3FHySg@mail.gmail.com>
+Subject: =?UTF-8?B?Q29jYcOtbmE=?=
+To: <raulblancas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="0000000000001833f40630147f13"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000005,0.002250)], BW: [Enabled, t: (0.000023)], RTDA:
+ [Enabled, t: (0.049410), Hit: No, Details: v2.87.0; Id:
+ 20.wn9j7.1im34as83.1671; mgx: 10_e25d63d9dc126284516a9b84fe0de4a7;
+ wl[ai_skiplist(10_e25d63d9dc126284516a9b84fe0de4a7-786-s:ai)]], total: 0(775)
+X-CoreService2-Ref: 0001.0A002105.67D07414.0018
+X-OriginalArrivalTime: 11 Mar 2025 17:34:11.3078 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Venderme cocaína Venderme cocaína 
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [209.85.128.174 listed in zen.spamhaus.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.128.174 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.174 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.174 listed in sa-trusted.bondedsender.org]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--0000000000001833f40630147f13
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Venderme coca=C3=ADna
+
+--0000000000001833f40630147f13
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Venderme coca=C3=ADna=C2=A0</div>
+
+--0000000000001833f40630147f13--
+

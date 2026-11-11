@@ -1,0 +1,45 @@
+Return-Path: <mvargas@secureitmx.com>
+Delivered-To: mvargas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id yJ0CFcpcz2fC3QsA87FxYg
+	(envelope-from <mvargas@secureitmx.com>)
+	for <mvargas@secureitmx.com>; Mon, 10 Mar 2025 17:42:34 -0400
+Return-path: <mvargas@secureitmx.com>
+Envelope-to: mvargas@secureitmx.com
+Delivery-date: Mon, 10 Mar 2025 17:42:34 -0400
+Received: from fixed-187-191-39-245.totalplay.net ([187.191.39.245]:42880 helo=Becario2)
+	by res-cp5.yyz2.websiteservername.com with esmtpa (Exim 4.98.1)
+	(envelope-from <mvargas@secureitmx.com>)
+	id 1trktO-00000003IP0-0Bz7
+	for mvargas@secureitmx.com;
+	Mon, 10 Mar 2025 17:42:34 -0400
+From: "Microsoft Outlook" <mvargas@secureitmx.com>
+Sender: "Microsoft Outlook" <mvargas@secureitmx.com>
+To: "May" <mvargas@secureitmx.com>
+Subject: Mensaje de prueba de Microsoft Outlook
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0023_01DB91D3.0A14BDA0"
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0023_01DB91D3.0A14BDA0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Mensaje de correo electr=C3=B3nico enviado autom=C3=A1ticamente por =
+Microsoft Outlook al comprobar la configuraci=C3=B3n de su cuenta.
+
+------=_NextPart_000_0023_01DB91D3.0A14BDA0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><p>Mensaje de correo electr=C3=B3nico enviado =
+autom=C3=A1ticamente por Microsoft Outlook al comprobar la =
+configuraci=C3=B3n de su cuenta.
+</p></body></html>
+------=_NextPart_000_0023_01DB91D3.0A14BDA0--
+

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.10",
+        "php-mime-mail-parser/php-mime-mail-parser": "^1.0",
+        "zbateson/mail-mime-parser": "^3.0"
+    }
+}

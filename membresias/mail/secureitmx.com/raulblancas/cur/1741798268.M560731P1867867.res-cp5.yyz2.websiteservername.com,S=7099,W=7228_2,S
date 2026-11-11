@@ -1,0 +1,129 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: raulblancas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id yA46IXy70WdbgBwA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <raulblancas@secureitmx.com>; Wed, 12 Mar 2025 12:51:08 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: raulblancas@secureitmx.com
+Delivery-date: Wed, 12 Mar 2025 12:51:08 -0400
+Received: from mail3.us.scanscope.net ([52.161.96.58]:3997 helo=mail1.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1tsPIN-00000007tLi-0uCe
+	for raulblancas@secureitmx.com;
+	Wed, 12 Mar 2025 12:51:08 -0400
+Authentication-Results: CNUSMTA1-1.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f182.google.com ([209.85.128.182])
+	by mail1.us.scanscope.net v10.0.0.0;	 Wed, 12 Mar 2025 16:50:17 +00:00
+Received: by mail-yw1-f182.google.com with SMTP id 00721157ae682-6ef7c9e9592so55867b3.1
+        for <raulblancas@secureitmx.com>; Wed, 12 Mar 2025 09:50:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741798216; x=1742403016; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=vCOswSIqxMmWCYspl0HQS0iGiJMdYrHy5sGIfL5tLvk=;
+        b=j4tTRc6rwXsjv56s71wL9fbThClgh/YiY73rneZdVDYoavF6MlYdxYmU44B80wyBRH
+         1H6AAriZeZJekhYGGhACvmrUZEz8X1l4i3lLQXYoGqpWbFUySyv17DzI8cEKlNJkkEQr
+         w+jFPgCqBgfjZuhT1kJfJrJu9384acuQobKmxOs1C7om72jWlZyAu9naH16g9m8jNcex
+         UcxV1Bh/Bz+szeasBTLRNrSuZHWZL7r9rEcMf7kjW+cG10K/Toje0RYPe2tHyJzl8m07
+         lL39SpNd7nOUkdgonH9E5ojP+Al0swngimoVuNQ+I0xjR37rnf9Etq+GJENQpP0/iqOA
+         GNKQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741798216; x=1742403016;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=vCOswSIqxMmWCYspl0HQS0iGiJMdYrHy5sGIfL5tLvk=;
+        b=nQ+fP+fLT8XqFZj5I1yyP5qm+yR67g/gpXLiZl9Wm0EoE/eQ+t8yRTjlik5Dtq7bIr
+         y2CH3CzOAGotDUWCRxZgQR3vDskhzrCCiWogN+mPYyav0ymYvuuLQb7U98cRHEGvtrPB
+         wt5ftQvDGTjwPKckEhtfZF8BmjZavLz9A1iq7SH7wr1VR8QSV/lO1P5FSi79+9HSeAMG
+         N6gCkcW3FhkoeJnw52bAsWmK8JrvXtf2nhxz1FXj0kx45FR6F14JUAcGccY+nguBKJio
+         Y1roayCcsDbZT8n2pjcfJce66CW3oB4Kn20ldUdYcJYpHlKvie0eEiNoTzb61xlkHxa9
+         sfQw==
+X-Gm-Message-State: AOJu0YyIPd9ZyLiAE2L9tQlxzEKaINTiKLQ8xG80bI/auTH2kwYF3Ymh
+	Drgasm/WdW3e2L8thvn7n9oJCnR6guEEuBrbJ8LDFFnhlgb5U4uC0UgBd0Pt/Mz0X1d+u9quaQT
+	kAzs9PDB2ajwK/uZOTDHAx7eIn3gZkA==
+X-Gm-Gg: ASbGnctOGw4P+kq2noIkftvybmk8nfQoutIDLMx1MJC6T9d97AyvP/F66QO+kBY6u9J
+	1QnuEznipVB6h1/qqLnOiUSCI9W5YMsKFRPV8/oOU84bCLfU0m68hJuTRynk9oE2tb2lmfBEYdK
+	cM3eXR/9D5pzICRuGwqC0ADOmQG1fbXkZVNBnDCjg=
+X-Google-Smtp-Source: AGHT+IHIRD98z9TaU8jl2D5iG7AnB6iXro0iVDwg4CP4DIeKjwLgrkLiAc4nXvetnbJ6zxSfNUbhTosfHozkkPABVzE=
+X-Received: by 2002:a05:690c:6c02:b0:6fb:b4e7:1471 with SMTP id
+ 00721157ae682-6febf2a8828mr276333367b3.7.1741798216456; Wed, 12 Mar 2025
+ 09:50:16 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Wed, 12 Mar 2025 10:50:06 -0600
+X-Gm-Features: AQ5f1Jp9m8WBG9z4ZOJTyMVNtsHBUonqiQfZmr_B8oxWeoQ83iNeFs9hxgy0PKc
+Message-ID: <CAFGc8j_BNaCnrxy9kb683sSwrf43KACHRC5Ki3kPgbiqSPgrFA@mail.gmail.com>
+Subject: Homofobia
+To: <raulblancas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="000000000000f6611e063027ff59"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000006,0.002050)], BW: [Enabled, t: (0.000019)], RTDA:
+ [Enabled, t: (0.064101), Hit: No, Details: v2.87.0; Id:
+ 20.gzp97.1im5k77du.v8oj; mgx: 10_a8527dde8e0463fbb16bd959530ca0a8], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002106.67D1BB30.005B
+X-OriginalArrivalTime: 12 Mar 2025 16:50:17.6489 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Aquí somos homofóbicos Aquí somos homofóbicos 
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [209.85.128.182 listed in zen.spamhaus.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.182 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.182 listed in sa-trusted.bondedsender.org]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--000000000000f6611e063027ff59
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Aqu=C3=AD somos homof=C3=B3bicos
+
+--000000000000f6611e063027ff59
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Aqu=C3=AD somos homof=C3=B3bicos=C2=A0</div>
+
+--000000000000f6611e063027ff59--
+

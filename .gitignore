@@ -1,0 +1,49 @@
+# Archivos y directorios comunes a ignorar
+**/uploads/
+
+# Directorios vendor de Composer en cualquier subdirectorio
+**/vendor/
+
+# Archivos de solución/documentación local
+**/SOLUCION_ERRORES_COMPOSER.md
+
+# Archivos temporales de Composer
+**/composer/tmp-*.zip~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+error_log
+
+# Archivos de entorno local
+.env
+.env.local
+whatsapp/.env
+
+# WhatsApp — logs y payloads entrantes
+whatsapp/storage/logs/*.log
+whatsapp/storage/incoming/*.json
+whatsapp/storage/chat/messages.jsonl
+whatsapp/storage/chat/imported_message_ids.json
+whatsapp/storage/chat/media/*
+!whatsapp/storage/chat/media/.gitkeep
+
+# Dumps SQL locales (demasiado grandes para GitHub)
+secureitmxcom_tickets*.sql
+*.sql.bak
+
+Inventario/crud/contador_reporte_responsiva_empresa_1.txt
+Inventario/crud/reportes_generados_responsiva_empresa_1.csv
+Inventario/crud/error_pdf.log
+Inventario/crud/debug_html.html

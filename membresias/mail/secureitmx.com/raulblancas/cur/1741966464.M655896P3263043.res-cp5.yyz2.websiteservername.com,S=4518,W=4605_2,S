@@ -1,0 +1,87 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: raulblancas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id GD2jJYBM1GdDyjEA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <raulblancas@secureitmx.com>; Fri, 14 Mar 2025 11:34:24 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: raulblancas@secureitmx.com
+Delivery-date: Fri, 14 Mar 2025 11:34:24 -0400
+Received: from mail1.us.scanscope.net ([104.214.75.142]:2627 helo=mail3.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtp (Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1tt73I-0000000DiXu-23PZ
+	for raulblancas@secureitmx.com;
+	Fri, 14 Mar 2025 11:34:24 -0400
+Authentication-Results: CNUSMTA3-1.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f177.google.com ([209.85.128.177])
+	by mail3.us.scanscope.net v10.0.0.0;	 Fri, 14 Mar 2025 15:33:21 +00:00
+Received: by mail-yw1-f177.google.com with SMTP id 00721157ae682-6feb229b716so22250527b3.3
+        for <raulblancas@secureitmx.com>; Fri, 14 Mar 2025 08:33:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741966400; x=1742571200; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=i5TE6VYTtK/GwptUclzdILb2IskbLSDANlm+eQ6WjSc=;
+        b=AjvmYZ4H6boptO0Acffwdsp24rAIa8aWUVaZ8f3Q1cbZD+CCuUcCW2815pCyeXfsw7
+         XkZR/72tzatYkWUzWrXs52vEazAYiKMlKhCpL2P1/aPTEoncc4StjnAtRuzaHxKPvpoG
+         KGq/toxsXFS7nKppZloWkvuZPP2E48Ny1gWK5Dz+S+svqHEmJtkHN1dUDnb8KoIi+cKa
+         KlZblnDoWUYt6nsT+4ZkU7U88DmNVlAewbp7hGNofCRFbuRGHhuuQmkiPvRFk9LFNMwT
+         kktws0r1sm0w+Z97sJmq7ykqY0DrhO2MuQp/yEYmu26pgATOPzVguplmxPgrbwb0f8au
+         keYQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741966400; x=1742571200;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=i5TE6VYTtK/GwptUclzdILb2IskbLSDANlm+eQ6WjSc=;
+        b=qxvSl1m7kZeR34GIRsux76AabhEQXenqHwEMIO0gIJ+3BsscGHo1PRYWwKn/+MMEB9
+         oDyxQ2jvVC+aJ7x/q+i4M0SJPy4NCn2tSP6CkF2blBa5+hrS8O3sBjTuvCcO7dc72CT2
+         R60FS9260CCsxUOsBpUZlRAGqzZRJkocBWI1w10WXdn7xtGhdsE8JXjO0EO8NGNZab43
+         6cM1ezSvSdo/RjJFzqw7DaXUTlhV6xR96GY24Zga/WyPovJyOYsrcj9o7aJnHWsMUCWa
+         QtdiL5+dIw7UxfIpW6KfGpClRPF1KXZyaGxvhb10bzjn3W3v1aYfSzYK/jN8ASXZpiB1
+         4yxQ==
+X-Gm-Message-State: AOJu0YwNuqzVkXVGZWwi4/2noxJ3BGjOwa0Vv39GMj8BiKNmg92yfs24
+	FfZblzIt4Io9KawaFRmyvq9FRZEGO6O683Cxtw98bn+KfL9c+5R31AVmJqeXLNkftL5O4/era8L
+	IUL17BwUHLtD11xjXwlYsO0q3TmvH5A==
+X-Gm-Gg: ASbGncu7Fwp0mphJwGyqjKHH6D/kW0gG3jOj8P20ezSmciLrlU5aroqOa/FU6tst1Lo
+	XbJtgjZg7t61vOxYYw3yWIC69Gu8hPm4bOp3n2FljFSZyhXwhhDrQZr/snMtx0gNx8MinXNixqW
+	nzqN5plNrQ8BqtDplfQSaB6NBxGqa3
+X-Google-Smtp-Source: AGHT+IEKvrqUK0O75EdhCKvKrCGMy/aePHD8EXfx/bM2D5JFoXN09I25A4dA9UeCPsuu1m3MB/QnI0jMET9mYgnmLQU=
+X-Received: by 2002:a05:690c:4988:b0:6fe:bf9d:8cca with SMTP id
+ 00721157ae682-6ff45bddba0mr35378097b3.0.1741966400561; Fri, 14 Mar 2025
+ 08:33:20 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Fri, 14 Mar 2025 09:33:09 -0600
+X-Gm-Features: AQ5f1JqktcfVT640QNd3HUKHvEY3JShTBHYGgWSu0uPg3W1UOUXS2Oc2WV3vM0g
+Message-ID: <CAFGc8j96_sh5tc4gR38hptWRMhDpUR205d5DzpOVk8QzndviOA@mail.gmail.com>
+Subject: Homofobia
+To: <raulblancas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="000000000000842eb306304f2828"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000011,0.003353)], BW: [Enabled, t: (0.000022)], RTDA:
+ [Enabled, t: (0.056219), Hit: No, Details: v2.87.0; Id:
+ 20.6kkbt.1imakkbau.7g; mgx: 10_5cf0b845f51922aa7a965573cf18825f], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A00211D.67D44C3C.0033
+X-OriginalArrivalTime: 14 Mar 2025 15:33:21.6709 (UTC)
+
+--000000000000842eb306304f2828
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Este mensaje es completamente homof=C3=B3bico e insita el odio a los geys
+
+--000000000000842eb306304f2828
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Este mensaje es completamente homof=C3=B3bico e insita el=
+ odio a los geys</div>
+
+--000000000000842eb306304f2828--
+

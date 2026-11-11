@@ -1,0 +1,134 @@
+Return-Path: <spider5893@gmail.com>
+Delivered-To: mvargas@secureitmx.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id mBr+HEBdz2fC3QsA87FxYg
+	(envelope-from <spider5893@gmail.com>)
+	for <mvargas@secureitmx.com>; Mon, 10 Mar 2025 17:44:32 -0400
+Return-path: <spider5893@gmail.com>
+Envelope-to: mvargas@secureitmx.com
+Delivery-date: Mon, 10 Mar 2025 17:44:32 -0400
+Received: from mail1.us.scanscope.net ([104.214.75.142]:2450 helo=mail3.us.scanscope.net)
+	by res-cp5.yyz2.websiteservername.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <spider5893@gmail.com>)
+	id 1trkvD-00000003Izo-0rsr
+	for mvargas@secureitmx.com;
+	Mon, 10 Mar 2025 17:44:32 -0400
+Authentication-Results: CNUSMTA3-1.us.scanscope.net; spf=pass
+ smtp.mailfrom=spider5893@gmail.com; dkim=pass header.i=@gmail.com;
+ dmarc=pass action=none header.from=gmail.com;
+Received: from mail-yw1-f179.google.com ([209.85.128.179])
+	by mail3.us.scanscope.net v10.0.0.0;	 Mon, 10 Mar 2025 21:43:41 +00:00
+Received: by mail-yw1-f179.google.com with SMTP id 00721157ae682-6fead015247so34732807b3.2
+        for <raulblancas@secureitmx.com>; Mon, 10 Mar 2025 14:43:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1741643020; x=1742247820; darn=secureitmx.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=1kQabUbos6YcEzxcUpVLloMZ0M8JsLbPvC4f6s3GA9A=;
+        b=mRIFdggKpW4PJJM+sdh6DvxaE4hNA1GrKGEGmtYMhQbyLk38wi1dvijCafPRFe+UCn
+         U17YYbfqVzkGKXx35N9SQnzRu/kfOXNor76Hi/I30Y17E5fwtbMWJ1fIPkHKR+bFCDZn
+         dbRdly7lB8cBmc9tvQUgUMz061I1i6L7Vq4BmgXODIwdzV1gTwU44pl7NU4DamxCgDQm
+         ZlwZHRaiZour/yNbzwuo4asF4GBaMoxiobnOY4Hza6fkV6t/LlkiIuvk0KjRF5lnGZMQ
+         eObqMDbR8Ah6s5EcpVO5f8EDyQ0p6StcikXye6cKRagcpDbFwPGAcpxkiIt9sqI0wA4O
+         Ok6A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1741643020; x=1742247820;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=1kQabUbos6YcEzxcUpVLloMZ0M8JsLbPvC4f6s3GA9A=;
+        b=EC+hXlZmJ+GYzXaqypaxShdCAUhQwm1QOljGBoD9x5eb3xFGE2WMFPZxuOVtR/bbY+
+         KUsjBGoMcnL4A894KczhhPYqpOZ19+usfR2hGFd10mSzYej9+w8tTAUjkKUA9aOC6c6y
+         CytfOnj+ezX0H3tgXsY9e0JtNNDZfpVBPlFBJyJ17tjYRPyMP5cX3Pu/EBkWe9CqUzGb
+         pkaqZlOO9kIKSkLhik3tVukvGmb3FoVGt6KvTbV64i8Kg1e97FC12tBmEFQaJhnhIHQ/
+         XUcxychVIzG/SUBpJ0aW10OI/gOcjuMv0cdVVb7/obx2HLWJuChkmBiCEwK3fYDUyQvT
+         n/eA==
+X-Gm-Message-State: AOJu0YzizY5RbYxAFKFWJHRhVnKi+0DzpsSwRLzDFbCJzhPWQBMd8hV6
+	zGbsywdnVLxnQP37uxHbHm1/FK4Q101UeI+fkg2if+0w6ekTzs0dyFVMphDmiLVYFBdp+sBa9Fo
+	iBNBKakKRDFd/I7gYfhrnovh0avnu+A==
+X-Gm-Gg: ASbGncu+yi2zOt1gMzB2+oVtkLkRJBWwuGHSz/KEIZ0ubu1vAIu33XeICpUt4i4RQ5e
+	GJYtACue49P8MLq3o8eVDWVg5GpOODoOZUoP2AuYH4vJt0hwgn3XaaBQ0XklPDAIYY862LwWtZF
+	hV2bfdq51NfVbabE+rF3wuGz2mepk=
+X-Google-Smtp-Source: AGHT+IFE/QUTa03x3vorSvttBj5lBZ53UlUceyJeZjZU9eQbf2w95yVuHjgWVHVM8XVDJaafojzGieVYMB1r52buzpA=
+X-Received: by 2002:a05:690c:6f12:b0:6f6:d01c:af1f with SMTP id
+ 00721157ae682-6febf2f7323mr218416077b3.16.1741643020286; Mon, 10 Mar 2025
+ 14:43:40 -0700 (PDT)
+MIME-Version: 1.0
+From: Raul Osvaldo <spider5893@gmail.com>
+Date: Mon, 10 Mar 2025 15:43:30 -0600
+X-Gm-Features: AQ5f1Jqj1hnhaUeZ9CiEtztdSkCMzTRqqXePZloBtyapwjpAnFCsgz2FOFhpElI
+Message-ID: <CAFGc8j_NbdudYATpmrdj4pa0gOikgLdJp1zE4CoVk96NmDh49g@mail.gmail.com>
+Subject: Correo de prueba
+To: <raulblancas@secureitmx.com>
+Content-Type: multipart/alternative; boundary="0000000000008cc690063003dd13"
+X-DkimAuthResult: pass
+X-CN-Bitdefender-SpamStamp: Build: [Engines: 2.19.3.1577, Stamp: 3], Multi:
+ [Enabled, t: (0.000008,0.002670)], BW: [Enabled, t: (0.000020)], RTDA:
+ [Enabled, t: (0.060912), Hit: No, Details: v2.87.0; Id:
+ 20.vvj7j.1im1070ua.dqs7; mgx: 10_a8527dde8e0463fbb16bd959530ca0a8], total:
+ 0(775)
+X-CoreService2-Ref: 0001.0A002110.67CF5D0F.0027
+X-TLSLevel: Try
+X-OriginalArrivalTime: 10 Mar 2025 21:43:41.4043 (UTC)
+X-Spam-Status: No, score=3.6
+X-Spam-Score: 36
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "res-cp5.yyz2.websiteservername.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Correo reenviado Correo reenviado 
+ Content analysis details:   (3.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED    RBL: ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked. See
+                             https://www.spamhaus.org/returnc/vol/
+                             [209.85.128.179 listed in zen.spamhaus.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [209.85.128.179 listed in bl.score.senderscore.com]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit
+                             [spider5893(at)gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             [spider5893(at)gmail.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [209.85.128.179 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.128.179 listed in sa-accredit.habeas.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.8 GB_FREEMAIL_NUM        Freemail spammy address
+  1.2 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Spam-Flag: NO
+
+--0000000000008cc690063003dd13
+Content-Type: text/plain; charset="UTF-8"
+
+Correo reenviado
+
+--0000000000008cc690063003dd13
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Correo reenviado</div>
+
+--0000000000008cc690063003dd13--
+

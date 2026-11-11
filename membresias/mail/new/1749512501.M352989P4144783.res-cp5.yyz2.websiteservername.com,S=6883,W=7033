@@ -1,0 +1,150 @@
+Return-Path: <>
+Delivered-To: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Received: from res-cp5.yyz2.websiteservername.com
+	by res-cp5.yyz2.websiteservername.com with LMTP
+	id mDkaFDVxR2iPPj8A87FxYg
+	(envelope-from <>)
+	for <secureitmxcom@res-cp5.yyz2.websiteservername.com>; Mon, 09 Jun 2025 19:41:41 -0400
+Return-path: <>
+Envelope-to: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Delivery-date: Mon, 09 Jun 2025 19:41:41 -0400
+Received: from firebrick.maple.relay.mailchannels.net ([23.83.214.59]:40819)
+	by res-cp5.yyz2.websiteservername.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	id 1uOm7Z-0000000HQL6-0tTn
+	for secureitmxcom@res-cp5.yyz2.websiteservername.com;
+	Mon, 09 Jun 2025 19:41:41 -0400
+Received: by relay.mailchannels.net (Postfix)
+	id 53DA0164040; Mon,  9 Jun 2025 23:41:00 +0000 (UTC)
+Date: Mon,  9 Jun 2025 23:41:00 +0000 (UTC)
+From: MAILER-DAEMON@mailchannels.net (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: secureitmxcom@res-cp5.yyz2.websiteservername.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="C2C43165C25.1749512460/relay.mailchannels.net"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20250609234100.53DA0164040@relay.mailchannels.net>
+X-Spam-Status: No, score=
+X-Spam-Score: 
+X-Spam-Bar: 
+X-Ham-Report: 
+X-Spam-Flag: NO
+
+This is a MIME-encapsulated message.
+
+--C2C43165C25.1749512460/relay.mailchannels.net
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host relay.mailchannels.net.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<21302039@utfv.edu.mx>: Host or domain name not found. Name service error for
+    name=utfv.edu.mx type=MX: Host not found, try again
+
+--C2C43165C25.1749512460/relay.mailchannels.net
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; relay.mailchannels.net
+X-Postfix-Queue-ID: C2C43165C25
+X-Postfix-Sender: rfc822; secureitmxcom@res-cp5.yyz2.websiteservername.com
+Arrival-Date: Mon,  9 Jun 2025 17:00:01 +0000 (UTC)
+
+Final-Recipient: rfc822; 21302039@utfv.edu.mx
+Original-Recipient: rfc822;21302039@utfv.edu.mx
+Action: failed
+Status: 4.4.3
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+    for name=utfv.edu.mx type=MX: Host not found, try again
+
+--C2C43165C25.1749512460/relay.mailchannels.net
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <secureitmxcom@res-cp5.yyz2.websiteservername.com>
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id C2C43165C25
+	for <21302039@utfv.edu.mx>; Mon,  9 Jun 2025 17:00:01 +0000 (UTC)
+Received: from res-cp5.yyz2.websiteservername.com (trex-green-3.trex.outbound.svc.cluster.local [100.96.75.185])
+	(Authenticated sender: hostpapa)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 173FE1654C3
+	for <21302039@utfv.edu.mx>; Mon,  9 Jun 2025 17:00:01 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1749488401; a=rsa-sha256;
+	cv=none;
+	b=IksnaZPOQrBBZJpQojPS3uMMJeSblF/l2P5+Sd9Uk0tjOHCENNnDj3SVbFzGrsSL9mznkB
+	S8hKpxFGH+G3LQgPivMnz94owC945VyqI73EQcL/xiCPKtTill7sqkHECB6wObJKiA53X5
+	RrOXiAJvqia+IpyWrJrlu2J/GPcQNUzVTljfyVmFYpVYhE1dAzWULSDC2s+RGXqCBZx5YZ
+	Jqt23f84eHULYmFTqHN4UzFdfQTnq3tMFR9K/UJ7ZeGLjb6JUiO4BTYjLkVbX9FYj3Iq9P
+	5QxXeSO4elKSKoF5+qTg6MZ8Z5hiAVACTqzICfA2UtxQCZxLLrRumhcWgSJO5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1749488401;
+	h=from:from:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:content-type:content-type:  dkim-signature;
+	bh=SlzRQoM7Ts1XFSryQL5bMovrKsuE7pKoY96KdPOxhWs=;
+	b=45QSzdaosflpEXlZspTur2jruzYQoy9jWrJ4Be+C/NYdWGsiYYFO5NvUTThtJhYE1EjFCE
+	qWo7YKak7gqYJ1IhGl2MTxug+4sQ/gWslrAz2noKaq+G+PPl+F6QlZ88AdqROdC3N/Skrh
+	7abnFN/XeoX83YHCcD94Usz5vTYWWhxPhT9Ll/8XR/ZHnTSqYGhSqMRtnR43eSa0Tf6BLM
+	l1prdctVtQEF7JDgCNv5I/OqfCpoAXlnuerDagiYHrKIX6n/MzMZOfXekgvF5zJB8BfBri
+	zMLAalhKO3Lb6KJzllHjdAm9N9ROIuJwi+G0qH8d2+5i/uMIFmBsMc0h5tMPng==
+ARC-Authentication-Results: i=1;
+	rspamd-95f6fbf49-pm2kz;
+	auth=pass smtp.auth=hostpapa
+ smtp.mailfrom=secureitmxcom@res-cp5.yyz2.websiteservername.com
+X-Sender-Id:
+ hostpapa|x-authuser|secureitmxcom@res-cp5.yyz2.websiteservername.com
+X-MC-Relay: Bad
+X-MailChannels-SenderId:
+ hostpapa|x-authuser|secureitmxcom@res-cp5.yyz2.websiteservername.com
+X-MailChannels-Auth-Id: hostpapa
+X-Desert-Madly: 04f6c03f5718020b_1749488401353_1589299203
+X-MC-Loop-Signature: 1749488401353:346405748
+X-MC-Ingress-Time: 1749488401353
+Received: from res-cp5.yyz2.websiteservername.com
+ (res-cp5.yyz2.websiteservername.com [66.102.128.56])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.96.75.185 (trex/7.0.3);
+	Mon, 09 Jun 2025 17:00:01 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=secureitmx.com; s=default; h=Date:Message-Id:Content-Type:Reply-To:From:
+	Subject:To:Sender:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=SlzRQoM7Ts1XFSryQL5bMovrKsuE7pKoY96KdPOxhWs=; b=BSx03ZkqWY6TZkGe36t1oQuXZJ
+	2k8G76Mk9KVI2g3+4HR9US43/jxoV5VNvkU3ISBUKHjQVgK8OFf8wFro7giSt4E00WMBKmnjMf574
+	Qy68M7SbpERkThKZ6naVJ5mjEg+Bt7n2JBNhT2bu7yxwv4nlWeLcEnv8YQnId/ApY+cswiIP2o/TQ
+	ELdKXdi6aRfnTIUZ7HplicTX2oLHJVTKjEXr5KR1S8T/gXxM0YI6aWjUT7DB+QZYEr0gCqNBwELbT
+	TGqQpsUI0zhc/8DGIZHOF7w15xglSVyyU1gOGhbyH+IYtq+qkhtRVjABYi6CIH+ll7CRC4MN4YEkx
+	Gm8fW69A==;
+Received: from secureitmxcom by res-cp5.yyz2.websiteservername.com with local (Exim 4.98.1)
+	(envelope-from <secureitmxcom@res-cp5.yyz2.websiteservername.com>)
+	id 1uOfql-0000000E6Ey-09Yh
+	for 21302039@utfv.edu.mx;
+	Mon, 09 Jun 2025 13:00:00 -0400
+To: 21302039@utfv.edu.mx
+Subject: Re: [Ticket #887] Actualización de Ticket
+From: Oscar <oantonio@securiti.info>
+Reply-To: oantonio@securiti.info
+Content-Type: text/html; charset=UTF-8
+Message-Id: <E1uOfql-0000000E6Ey-09Yh@res-cp5.yyz2.websiteservername.com>
+Date: Mon, 09 Jun 2025 12:59:55 -0400
+X-AuthUser: secureitmxcom@res-cp5.yyz2.websiteservername.com
+
+<p>Hola Oscar Antonio Jardon,</p><p>hola como estas?</p><p>--<br>Este es un mensaje automático del sistema de tickets. Por favor responda a este correo para continuar la conversación.</p>
+
+--C2C43165C25.1749512460/relay.mailchannels.net--
